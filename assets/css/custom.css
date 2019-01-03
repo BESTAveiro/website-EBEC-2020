@@ -523,6 +523,14 @@ section h3.section-subheading {
   margin-bottom: 75px;
 }
 
+h4.service-heading{
+  margin: 15px 0;
+  text-transform: none;
+  font-size: 24px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
 body{
   background: transparent;
   background-position:center center;
@@ -596,11 +604,6 @@ footer{
   align-items: center;
 }
 
-}.service-heading {
-   margin: 15px 0;
-   text-transform: none;
-   font-size: 24px !important;
- }
 
 .entrada{
   margin-top:80px;
