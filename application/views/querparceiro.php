@@ -1,34 +1,3 @@
-
-<link rel="stylesheet" href="<?php echo base_url('assets/css/scrollToTop.css') ?>"/>
-
-
-<script>
-    $(document).ready(function(){
-
-
-        $('.scrollToTop').hide();
-
-        //Check to see if the window is top if not then display button
-        $(window).scroll(function(){
-            if($(window).scrollTop() + $(window).height() > $(document).height()-20) {
-                $('.scrollToTop').fadeIn();
-            } else {
-                $('.scrollToTop').fadeOut();
-            }
-        });
-
-        //Click event to scroll to top
-        $('.scrollToTop').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
-            return false;
-        });
-
-    });
-</script>
-
-
-
-<br><br>
 <section>
     <div class="container">
         <div class="row">
@@ -109,7 +78,7 @@
                 <br/>
             </div>
             <div class="col-md-4">
-                <img class="imgsize img-responsive" src="<?php echo base_url('assets/img/querparceiro/1.jpg')?>">
+                <img class="imgsize img-responsive" src="<?php echo base_url('assets/img/event/ebec-aveiro-2.jpg')?>">
 
             </div>
 

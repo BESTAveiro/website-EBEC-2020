@@ -89,7 +89,7 @@
   background: #428BFF;
   border-radius: 1px;
 }
-.tabs .content {
+.tabs .content{
   margin-top: 30px;
 }
 .tabs .content section {
@@ -268,7 +268,7 @@
   transition: color 500ms;
 }
 
-.navbar .nav > li a:hover {color:#EEA225}
+.navbar .nav > li a:hover {color:#91C044}
 
 .navbar-brand {
   float: left;
@@ -288,10 +288,37 @@
   text-align: center;
 }
 
+.nav-logo{
+  height:50px;
+}
+
+@media (max-width: 768px){
+  .nav-logo{
+    height:45px;
+  }
+}
+
 /* Dropdown menu */
-.dropdown-menu li a:hover,.dropdown-menu li a:focus,.dropdown-menu li a:active {
-  background-color:#294F66;
-  color:#EEA225;
+
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  background-color: transparent;
+  color:#91C044;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color:#91C044;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color:#91C044;
+  background-color: transparent;
 }
 
 /* Contacts */
@@ -536,7 +563,7 @@ body{
   background-position:center center;
   background-repeat:no-repeat;
   background-size:cover;
-  background-image: url('../img/main-background.jpg');
+  background-image: url('../img/event/main-background.jpg');
   background-attachment: fixed;
 }
 
@@ -581,7 +608,7 @@ footer{
 }
 
 .text-white {
-    color: #FFFFFF; !important;
+    color: #FFFFFF ;
 }
 
 .text-black{
@@ -602,6 +629,10 @@ footer{
 .vertical-align {
   display: flex;
   align-items: center;
+}
+
+.vertical-alignment{
+  vertical-align:middle;
 }
 
 
@@ -633,4 +664,8 @@ footer{
   .colunas{
     height:91px;
   }
+}
+
+.text-green{
+  color:#91C044;
 }
