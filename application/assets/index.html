@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Links meta-->
+    <!--oimana-->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description"
+          content="Website of EBEC Aveiro 2017 - A students engineering competition organized by BEST Aveiro.">
+    <meta name="keywords" content="EBEC">
+    <meta name="author" content="ITBugs">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Barra de navegacao-->
+    <link rel="icon" type="imagem/x-icon" href="img/logos/roldana-laranja.png">
+    <title>EBEC Aveiro 2019</title>
+
+    <!--Google Apis-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300">
+
+
+    <!--Links jquery-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--Links Form-validation-->
+    <link rel="stylesheet" href="form-validation/css/formValidation.min.css">
+    <script type="text/javascript" src="form-validation/js/formValidation.min.js"></script>
+    <script type="text/javascript" src="form-validation/js/framework/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link name="author" href="Faisal Russel(russel365)">
+
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/35/6/intl/pt_pt/onion.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="//s7.addthis.com/static/layers.c387ea0d8ef6d16b44e4.js"></script>
+    <script>
+        $(document).ready(function(){
+
+
+            $('.scrollToTop').hide();
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                console.log((window.innerHeight - $(this).scrollTop())/window.innerHeight);
+                if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        });
+    </script>
+    <a href="#" class="scrollToTop hidden-xs"></a>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top division-blue">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="nav-logo" src="img/logos/roldana-branca.png">
+            </a>
+        </div>
+
+        <div class="pull-right hidden-xs">
+            <a target="_blank" href="http://bestaveiro.web.ua.pt/">
+                <img class="nav-logo" src="img/logos/best-aveiro-white.png">
+            </a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav specialButton">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre a EBEC
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu division-blue">
+                        <li><a href="#ebec">A EBEC Aveiro</a></li>
+                        <li><a href="#programa">Programa</a></li>
+                        <li><a href="#ebecPT">EBEC Portugal</a></li>
+                        <li><a href="#ebecAnt">Edições Anteriores</a></li>
+                        <li><a href="#testemunhos">Testemunhos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Mais sobre a EBEC<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu division-blue">
+                        <li><a href="#apply">Inscrição</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#equipa">A Equipa</a></li>
+                        <li><a href="#parcerias">Torne-se parceiro</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                        <li><a href="#partners" class="hidden">Parceiros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        A Organização<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu division-blue">
+                        <li><a href="#best">Sobre o BEST Aveiro</a></li>
+                        <li><a href="#info">Informações</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">EN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--entrada-->
+<section class="container division-gray division-main entrada">
+    <div class="row colunas"></div>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+            <img class="img-responsive" src="img/logos/ebec-aveiro.png">
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <h1 class="text-center text-blue big-number">14, 15, 16, 17 e 20 de março</h1>
+        </div>
+    </div>
+    <div class="row colunas"></div>
+</section>
+
+
+
+
+<section class="tabs division-blue division-main container" id="ebec">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange">A EBEC Aveiro</h2>
+            <br>
+        </div>
+    </div>
+
+    <input type="radio" id="tab1" name="tab-control" checked="">
+    <input type="radio" id="tab2" name="tab-control">
+    <input type="radio" id="tab3" name="tab-control">
+    <input type="radio" id="tab4" name="tab-control">
+
+    <!--    Mini-ícones-->
+    <ul>
+        <li>
+            <label for="tab1" role="button" class="text-center">
+                <i class="fas fa-map-pin"></i>
+                <br>
+                <span>Ronda Local</span>
+            </label>
+        </li>
+        <li>
+            <label for="tab2" role="button" class="text-center">
+                <i class="fas fa-tools"></i>
+                <br>
+                <span>Modalidades</span>
+            </label>
+        </li>
+        <li>
+            <label for="tab3" role="button" class="text-center">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <br>
+                <span>Treinamento</span>
+            </label>
+        </li>
+        <li>
+            <label for="tab4" role="button" class="text-center">
+                <i class="fas fa-briefcase"></i>
+                <br>
+                <span>Feira De Empresas</span>
+            </label>
+        </li>
+    </ul>
+
+    <div class="slider">
+        <div class="indicator">
+
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- EBEC Aveiro -->
+        <section class="division-blue container-fluid vertical-align">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-responsive" src="img/event/ebec-aveiro.png">
+                </div>
+                <div class="col-lg-7">
+                    <p class="text-justify text-white">
+                        O <b style="color:orange">BEST Aveiro</b> organiza anualmente uma das 88 fases locais do projeto EBEC.
+                    </p>
+                    <p class="text-justify text-white">
+                        Com a nona edição da competição a ocorrer em <b style="color:orange">março de 2019</b>, evento que tem vindo a contar com um
+                        grande número de participantes em todas as edições, consideramo-lo um dos eventos de maior destaque
+                        do BEST Aveiro. Direcionado aos alunos da Universidade de Aveiro, a EBEC Aveiro pretende ser um
+                        momento onde criatividade, desafio, energia, flexibilidade e espírito de equipa são postos em prática.
+                    </p>
+                    <p class="text-justify text-white">
+                        No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará,
+                        à parte da competição, uma <a style="color:orange" href="#jobFair">feira de empresas</a> seguida
+                        de um cocktail network, que irão ocorrer no dia 14 de março.
+                    </p>
+
+                    <div class="col-lg-12 text-center">
+                        <a class="specialButton button division-orange" href="#apply">
+                            Inscreve-te já!<span class="fa fa-chevron-right"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Modalidades -->
+        <section class="division-blue vertical-align container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Modalidades</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="col-lg-6">
+                        <h3 class="text-orange text-center">
+                            Case Study
+                        </h3>
+                        <p class="text-justify text-white">
+                            Os participantes terão a oportunidade de resolver dois casos de estudo fornecidos por empresas,
+                            que  deverão consistir num problema que poderá advir da necessidade da empresa em inovar ou otimizar processos.
+                            Cada um dos casos de estudo deverá estar preparado para corresponder a 12 horas de prova, sendo entregue aos
+                            participantes no início da competição.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <h3 class="text-orange text-center">
+                                Team Design
+                            </h3>
+                            <p class="text-justify text-white">
+                                Os participantes terão a oportunidade de construir um protótipo que solucione um desafio,
+                                colocado por uma empresa, com acesso a recursos limitados. Os protótipos serão posteriormente
+                                avaliados por um júri com base em parâmetros previamente definidos pela organização.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--BTD-->
+        <section class="division-blue container-fluid">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-responsive img-center" src="img/logos/btd.png">
+                </div>
+                <div class="col-lg-7">
+                    <p class="text-justify text-white">
+                        O BEST Aveiro volta a organizar mais uma edição dos <b class="text-orange">BEST
+                        Training Days</b>, desta vez inserido
+                        nas atividades da EBEC Aveiro 2019, onde terás a oportunidade de desenvolver as
+                        tuas capacidades numa formação.
+                    </p>
+                    <p class="text-justify text-white">
+                        A formação decorrerá durante a tarde do dia <b class="text-orange">15 de março</b> e é
+                        restrita aos participantes.
+                    </p>
+                    <p class="text-justify text-white">
+                        Todos os participantes do <b class="text-orange">BEST Training Day</b> receberão um
+                        certificado de participação na formação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feira de Empresas -->
+        <section class="container-fluid division-blue">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-orange">Feira de Empresas</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="img/event/job-fair.png" style="">
+                </div>
+                <div class="col-lg-8">
+
+                    <p class="text-white text-justify">
+                        Englobada na EBEC Aveiro 2019 realizar-se-á uma Feira de Empresas no dia
+                        <b class="text-orange">14 de março</b> na <b class="text-orange">Universidade de
+                        Aveiro</b> destinada a todo o público académico.
+                    </p>
+                    <p class="text-white text-justify">
+                        Será um espaço onde irão marcar presença empresas de diversos setores e permitirá aproximar
+                        o tecido empresarial à comunidade académica. Os estudantes terão a oportunidade de conhecer a
+                        atividade das entidades presentes e interagir com elas.
+                    </p>
+                    <p class="text-white text-justify">
+                        Depois, irá haver o <b class="text-orange">Cocktail Network</b> que possiblitará uma partilha de
+                        experiências e métodos de trabalho entre os estudantes, as empresas e a Universidade de Aveiro num ambiente
+                        mais informal.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+
+<section class="container division-gray division-main" id="programa">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="section-heading text-blue text-center">Programa</h2>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="text-center col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
+            <h4 class="service-heading text-blue" style="font-size: 24px;">14 Março</h4>
+            <h5 class="text-blue" style="font-size:22px">Quinta</h5>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">10:30 - 15:30</p>
+                <p style="font-size:15px;"><b>Feira de Empresas</b></p>
+            </div>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">16:00 - 16:30</p>
+                <p style="font-size:15px;"><b>Cocktail Network</b></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+            <h4 class="service-heading text-blue" style="font-size: 24px;">15 Março</h4>
+            <h5 class="text-blue" style="font-size:22px">Sexta</h5>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">18:00 - 20:00</p>
+                <p style="font-size:15px;"><b>Best Training Days</b></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4">
+            <h4 class="service-heading text-blue" style="font-size: 24px;">16 Março</h4>
+            <h5 class="text-blue" style="font-size:22px">Sábado</h5>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">09:30 - 10:00</p>
+                <p style="font-size:15px;"><b>Check-in</b></p>
+            </div>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">10:30 - 11:00</p>
+                <p style="font-size:15px;"><b>Opening Session</b></p>
+            </div>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">12:30 - 13:30</p>
+                <p style="font-size:15px;"><b>Lunch</b></p>
+            </div>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">14:00 - 00:00</p>
+                <p style="font-size:15px;"><b>Competition</b></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6">
+            <h4 class="service-heading text-blue" style="font-size: 24px;">17 Março</h4>
+            <h5 class="text-blue" style="font-size:22px">Domingo</h5>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">00:00 - 14:00</p>
+                <p style="font-size:15px;"><b>Competition</b></p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6">
+            <h4 class="service-heading text-blue" style="font-size: 24px;">20 Março</h4>
+            <h5 class="text-blue" style="font-size:22px">Quarta</h5>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">13:30 - 17:30</p>
+                <p style="font-size:15px;"><b>Presentations*</b></p>
+            </div>
+            <div style="vertical-align: middle">
+                <p style="font-size:18px">18:00 - 18:30</p>
+                <p style="font-size:15px;"><b>Closing Session*</b></p>
+            </div>
+            <div>
+                <p style="font-size:10px"><b>*Horários sujeito a mudanças</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- EBEC Portugal -->
+<section class="division-blue container division-main" id="ebecPT">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="section-heading text-orange text-center">EBEC Portugal</h2>
+        </div>
+    </div>
+    <div class="row text-white">
+        <div class="col-lg-5 col-md-4 col-sm-12 text-center">
+            <img class="img-responsive img-center" src="img/logos/ebec-pt-color.png">
+        </div>
+        <div class="col-lg-7 col-md-8 col-sm-12">
+            <p class="text-justify">
+                <b>A EBEC Portugal é a final nacional da competição de Engenharia do BEST.</b>
+            </p>
+            <p class="text-justify">
+                A EBEC Challenge Portugal é uma final Nacional organizada por 5 Grupos Locais do BEST
+                de norte a sul do país. Na fase Nacional irão competir os vencedores das diferentes competições
+                locais, de 5 Universidades Portuguesas.
+            </p>
+            <p class="text-justify">
+                Para mais informações visita o <a href="http://ebecportugal.pt/" class="text-orange"
+                                                  target="_blank">site</a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="division-main division-gray container" id="ebecAnt">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center section-heading text-blue"><b>Edições Anteriores</b></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/osqsy-kDcU4" class="embed-responsive-item" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/wPlLExjL_No" class="embed-responsive-item" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container division-blue division-main" id="testemunhos">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange hidden-xs">Testemunhos</h2>
+            <h2 class="section-heading text-orange hidden-lg hidden-md hidden-sm">Teste-<br>munhos</h2>
+            <h3 class="section-subheading text-orange">Professores e Participantes</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="padding-left:0px;padding-right:0px;">
+                <!-- Bottom Carousel Indicators -->
+                <ol class="carousel-indicators" style="margin-bottom:0px;">
+                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#quote-carousel" data-slide-to="1" class=""></li>
+                    <li data-target="#quote-carousel" data-slide-to="2" class=""></li>
+                    <li data-target="#quote-carousel" data-slide-to="3" class=""></li>
+                    <li data-target="#quote-carousel" data-slide-to="4" class=""></li>
+                </ol>
+
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner">
+
+                    <!-- Quote 1 -->
+                    <div class="item container-fluid active">
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-2 text-center">
+                                <img class="img-circle img-testimonial" src="img/testimonials/1.jpg">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-justify text-white">
+                                    <i class="fas fa-quote-left"></i> Após ter sido participante da EBEC Aveiro 2016,
+                                    surgiu a oportunidade de ser Coordenador da EBEC Aveiro 2017. Desde então, passaram-se
+                                    6 meses em que todos os dias eram diferentes. Era necessário organizar-me diariamente,
+                                    para conseguir conciliar os estudos e o trabalho que tinha para a EBEC Aveiro, sem nunca
+                                    perder a motivação para nenhum destes aspetos.
+                                    <br>
+                                    Nesta edição, contámos com a presença de um Main Sponsor do evento - a
+                                    Mahle;
+                                    reformulamos a modalidade de Case Study - fizemos 2 provas em 24h;
+                                    mantivemos a
+                                    existência de um workshop e de uma feira de empresas, desta vez com um
+                                    espaço de
+                                    Cocktail Network. A experiência tornou-se assim enriquecedora - criar e
+                                    coordenar
+                                    uma equipa, manter todos motivados, encontrar e resolver problemas que
+                                    apareciam
+                                    todas as semanas - pode parecer duro (e é) mas, na verdade, hoje sou
+                                    facilmente
+                                    capaz de dizer que valeu a pena por todas as aprendizagens que eu e a
+                                    minha
+                                    equipa trouxemos para nós, como estudantes, como futuros trabalhadores e
+                                    também
+                                    como pessoas. <br>
+                                    Por último, gostaria de deixar um apelo a todos: explorem áreas de
+                                    conhecimento que
+                                    não conhecem, saiam da vossa zona de conforto e agarrem as oportunidades
+                                    que aparecem.<i class="fas fa-quote-right"></i>
+                                </p>
+                                <small class="text-orange">
+                                    Pedro Reis<br>
+                                    Coordenador da EBEC Aveiro 2017
+                                    <br><br><br>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 2 -->
+                    <div class="item container-fluid">
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-2 text-center">
+                                <img class="img-circle img-testimonial" src="img/testimonials/2.jpg">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-justify text-white">
+                                    <i class="fas fa-quote-left"></i> Participar pela primeira vez na EBEC foi mais do
+                                    que aceitar um desafio, foi abraçar novos métodos de pensamento. A ideia era
+                                    participar em algo que testasse a nossa capacidade para resolver um problema em equipa.
+                                    <br>
+                                    O mais engraçado foi como a nossa ideia desta aventura mudou, de antes
+                                    para depois! Sabíamos mais ou menos como o desafio iria decorrer, mas foi muito
+                                    melhor do que estávamos à espera, foram dias bastante cansativos e trabalhosos, mas
+                                    também nos divertimos à brava, cada etapa concluída do nosso projeto deixava
+                                    sorrisos nas nossas caras, cada coffee break com a equipa dava uns belos minutos
+                                    de descontração para falarmos não entre nós (como equipa) como também para os nossos
+                                    colegas contra quem
+                                    estávamos a competir (foi sempre uma competição muito amigável)! <br>
+                                    Deixo os meus grandes parabéns à equipa que desenvolveu esta grande
+                                    aventura que ficará sempre
+                                    gravada nas nossas memórias. Não houve praticamente falhas nenhumas na
+                                    organização
+                                    do evento! Foi dos melhores projetos em que eu alguma vez aceitei
+                                    participar!<i class="fas fa-quote-right"></i>
+                                </p>
+                                <small class="text-orange">
+                                    Pedro Rocha<br>
+                                    Vencedor da EBEC Aveiro 2017<br>
+                                    Modalidade: Team Design
+                                    <br><br><br>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Quote 3 -->
+                    <div class="item container-fluid">
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-2 text-center">
+                                <img class="img-circle img-testimonial" src="img/testimonials/3.jpg">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-justify text-white">
+                                    <i class="fas fa-quote-left"></i> Da minha experiência da EBEC do ano passado só
+                                    tenho a dizer aspetos positivos, a logística do evento é muito interessante e
+                                    desafiadora, obrigando-nos a aprender sobre um determinado tema em pouco tempo, o
+                                    que nos faz desenvolver como alunos e futuros engenheiros.
+                                    <br>
+                                    Para concluir, a EBEC é um excelente concurso para quem gosta de
+                                    desafios e para por em prática o que vamos aprendendo.
+                                    <br>
+                                    Para concluir, a EBEC é um excelente concurso para quem gosta de
+                                    desafios e para por em prática o que vamos aprendendo.<i class="fas fa-quote-right"></i>
+
+                                </p>
+                                <small class="text-orange">
+                                    Pedro Rolo<br>
+                                    Vencedor da EBEC Aveiro 2017<br>
+                                    Modalidade: Case Study
+                                    <br><br><br>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 4 -->
+                    <div class="item container-fluid">
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-2 text-center">
+                                <img class="img-circle img-testimonial" src="img/testimonials/5.jpg">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-justify text-white">
+                                    <i class="fas fa-quote-left"></i>A minha participação como júri no EBEC Aveiro tem sido
+                                    um privilégio, enquanto docente universitária… Além da boa disposição sempre presente,
+                                    tive o prazer de participar num evento bem organizado! Para além do rigor e empenho
+                                    exigidos e demonstrados na resolução de questões técnico-científicas, fiquei, essencialmente,
+                                    agradada com a qualidade humana dos participantes e da organização.
+                                    <br>
+                                    No EBEC Aveiro tem-se conseguido fomentar o gosto pela liderança, mas também pelo espírito
+                                    de equipa e de entreajuda. Os desafios multidisciplinares são vencidos por todos, as
+                                    competências de cada participante sobressaem, permitindo criar valor acrescentado de
+                                    forma quase natural e descontraída!
+                                    <br>
+                                    Numa época onde se criticam tanto os métodos de ensino atualmente utilizados, é, sem
+                                    dúvida, uma lufada de ar fresco, conseguir perceber que algo se faz bem! Desejo, sinceramente,
+                                    todo o sucesso para as edições futuras!<i class="fas fa-quote-right"></i>
+                                </p>
+                                <small class="text-orange">
+                                    Professora Mónica Oliveira<br>
+                                    Departamento de Engenharia Mecânica<br>
+                                    Universidade de Aveiro
+                                    <br><br><br>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 5 -->
+                    <div class="item container-fluid">
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-2 text-center">
+                                <img class="img-circle img-testimonial" src="img/testimonials/4.jpg">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="text-justify text-white">
+                                    <i class="fas fa-quote-left"></i> Na Universidade de Aveiro, as atividades do BEST
+                                    Aveiro, nomeadamente no contexto
+                                    das competições EBEC, têm sido claros exemplos de sucesso. Por um lado,
+                                    mobilizam
+                                    um número considerável de pessoas, entre participantes, colaboradores
+                                    diversos e
+                                    assistência. Por outro lado, apresentam-se como excelentes iniciativas
+                                    no âmbito
+                                    de ciências, tecnologia e engenharia. Os desafios propostos promovem um
+                                    evidente
+                                    crescimento dos envolvidos, em questões tão diversas quanto a aplicação
+                                    prática
+                                    de conhecimentos científicos ou a imaginação e criatividade exigidos.
+                                    <br>
+                                    Os participantes beneficiam ainda das exigências de um trabalho de
+                                    equipa com
+                                    objetivos bem definidos e um prazo muito apertado, assim como de um
+                                    contacto
+                                    direto com representantes de empresas e instituições de relevo.
+                                    <br>
+                                    Este é, aliás, um dos marcadores essenciais do mérito desta organização,
+                                    sempre
+                                    apoiada por diversas entidades que constatam o dinamismo e a qualidade
+                                    do BEST
+                                    Aveiro.<i class="fas fa-quote-right"></i>
+                                </p>
+                                <small class="text-orange">
+                                    Professor João Oliveira<br>
+                                    Departamento de Engenharia Mecânica<br>
+                                    Universidade de Aveiro
+                                    <br><br><br>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="division-main division-gray container" id="apply">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-blue">Inscrição</h2>
+            <h3 class="section-subheading text-blue">
+                Para te inscreveres só precisas de efetuar os seguintes passos:
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+            <p class="text-black">
+                <span class="big-number text-blue">1.</span>
+                <b>Leia o regulamento que se encontra
+                    <a target="_blank" href="regulation/Regulamento.pdf">aqui</a>.</b>
+            </p>
+            <p class="text-black">
+                <span class="big-number text-blue">2.</span>
+                <b>Regista-te no site do BEST. Podes fazê-lo
+                    <a target="_blank" href="https://www.best.eu.org/account/registration.jsp">aqui</a>.</b>
+            </p>
+            <p class="text-black">
+                <span class="big-number text-blue">3.</span>
+                <b>Efetua a pré-inscrição na EBEC Aveiro 2019. Podes fazê-lo
+                    <a target="_blank" href="https://www.best.eu.org/event/localDetails.jsp?event=m624hj8">aqui</a>.</b>
+            </p>
+            <p></p>
+            <p class="text-black">
+                <span class="big-number text-blue">4.</span>
+                <b>Indica o nome da tua equipa. Todos os elementos da equipa devem indicar o mesmo nome.</b>
+            </p>
+            <p class="text-black">
+                <span class="big-number text-blue">5.</span>
+                <b>Preenche os dados pedidos. Todos os campos deverão ser preenchidos, à exceção do campo
+                    "Motivation Letter", que é de preenchimento facultativo. Clica em "Apply" para finalizares esta parte.</b>
+            </p>
+            <p class="text-black">
+                <span class="big-number text-blue">6.</span>
+                <b>Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2019. Brevemente irás
+                    receber um e-mail de confirmação de inscrição com mais informação sobre o evento.</b>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="container division-blue division-main" id="faqs">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange">FAQ</h2>
+            <h3 class="section-subheading text-orange">Frequently Asked Questions</h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse1">
+                                Quando tempo dura a competição?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Tens 24 horas para construir o teu protótipo, caso participes no <i>Team Design</i>, ou
+                            arranjar uma solução para o problema de
+                            <i>Case Study</i>. A apresentação do teu projeto será apenas na quarta-feira seguinte
+                            (20 de março).
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse2">
+                                Há quantos membros por equipa?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Cada equipa é constituída <u>sempre</u> por 4 elementos.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse3">
+                                Quando é que saberemos qual é a prova que teremos que realizar?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            A prova será apresentada na sessão de abertura, no entanto, o guião será apenas
+                            distribuído
+                            quando a competição se iniciar.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse4">
+                                Podemos sair da Universidade durante a prova?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Apenas serão permitidas deslocações externas ao local da prova exclusivamente com a
+                            aprovação do coordenador do evento.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse5">
+                                Que penalizações existem durante a prova para os participantes?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Caso se verifique o incumprimento das regras definidas para a competição, a equipa
+                            poderá ser penalizada na pontuação da sua prova ou desqualificada.
+                            A equipa poderá também estar sujeita à perda da caução.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse6">
+                                Paga-se para participar na competição?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Não, cada equipa terá apenas de deixar uma caução. O valor
+                            ser-te-á devolvido no final da competição, após a sessão de encerramento. Esta caução
+                            tem por objetivo prevenir quaisquer estragos causados.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse7">
+                                Temos direito a alimentação durante o fim de semana da competição?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Sim, ao longo do fim de semana terás direito a todas as refeições enquanto estiveres a
+                            participar na prova. Terás também disponível um coffee break contínuo durante todo o
+                            fim-de-semana.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse8">
+                                É possível descansar durante a prova?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Sim, haverá uma "sala de descanso" para os participantes poderem descansar e até dormir
+                            se assim o desejarem. Estará também disponível uma sala de recreação (sala que irá
+                            contar
+                            com algumas atividades de lazer), para usar durante os intervalos das provas, para que
+                            os
+                            participantes descontraiam um pouco.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse9">
+                                Quem vai avaliar as provas?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse9" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            O júri é composto por professores e elementos do BEST com experiência em competições,
+                            dependendo do teor da prova. Existe ainda a possibilidade de integrarem o júri
+                            representantes das empresas parceiras.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse10">
+                                Como vão ser avaliados os projetos?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse10" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Os projetos vão ser avaliados conforme o guião de cada prova, atempadamente fornecido
+                            aos participantes.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse11">
+                                Com quem devo tirar dúvidas durante a prova?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse11" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Só podes tirar dúvidas com pessoas designadas para o efeito: o responsável pela prova,
+                            pelo coordenador do evento e pela equipa de tópico.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-transform text-blue">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapse12">
+                                Tenho frequência no dia da prova. E agora?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse12" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Deves contactar a organização para adequar da melhor forma possível a calendarização da
+                            tua prova no dia de avaliação.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="container division-gray division-main" id="equipa">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-blue">Equipa</h2>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/david.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Pedro D. Gomes</h4>
+                <p>Coordenador da EBEC Aveiro 2019</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/ana-moura.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Ana Moura</h4>
+                <p>Responsável de Tópico</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/dalila.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Dalila Marques</h4>
+                <p>Responsável de Relações Empresariais</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/ana-rita.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Ana Rita Silva</h4>
+                <p>Responsável de Marketing</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/renan.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Renan Ferreira</h4>
+                <p>Responsável de Tecnologias de Informação</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img src="img/team/beatriz.jpg" class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Beatriz Candeias</h4>
+                <p>Responsável de Logística</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners -->
+<section class="division-gray division-main container hidden" id="partners">
+    <!--Primeira Linha-->
+    <div class="row">
+        <br>
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Parceiros Gold</h2>
+            <br>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <a href="http://voltalia.com/pt" target="_blank">
+                <img class="img-responsive img-center" style="max-height:120px"
+                     src="../assets/img/partners/ebec/gold/voltalia.png">
+            </a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row vertical-align">
+        <div class="col-lg-12 text-center">
+            <img class="img-responsive img-center" src="img/logos/linha.png">
+        </div>
+    </div>
+    <br><br><br>
+    <!--Segunda Linha-->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Parceiros Silver</h2>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-lg-4">
+            <a href="http://www.btl.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:140px"
+                     src="../assets/img/partners/ebec/silver/btl.png">
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a href="http://www.inova-ria.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:190px"
+                     src="../assets/img/partners/ebec/silver/geniuslogo.png">
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a href="http://www.alticelabs.com/pt/index.html" target="_blank">
+                <img class="img-responsive img-center" style="max-height:190px"
+                     src="../assets/img/partners/ebec/silver/alticelabs.png">
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <a href="http://www.colep.com/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:190px"
+                     src="../assets/img/partners/ebec/silver/colep.png">
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <a href="https://blip.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:155px"
+                     src="../assets/img/partners/ebec/silver/blip.png">
+            </a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-lg-12">
+            <img class="img-responsive img-center" src="img/logos/linha.png">
+        </div>
+    </div>
+    <br><br><br>
+    <!--Terceira Linha-->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Parceiros Promo</h2>
+            <br>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row vertical-align">
+        <div class="col-lg-3">
+            <img class="img-responsive img-center" style="max-height: 45px"
+                 src="../assets/img/partners/ebec/promo/bocadolobo.png">
+        </div>
+        <div class="col-lg-3">
+            <a href="https://www.tugabox.pt/?lang=pt-pt" target="_blank">
+                <img class="img-responsive img-center" style="max-height:120px"
+                     src="../assets/img/partners/ebec/promo/tugabox.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="http://canyouescape.pt/pt/index.php/pt/homepage/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:120px"
+                     src="../assets/img/partners/ebec/promo/CanYouEscape.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="https://www.facebook.com/Mirtiflor-745004355521875/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:120px"
+                     src="../assets/img/partners/ebec/promo/mirtiflor.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="https://www.jugais.com/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:130px"
+                     src="../assets/img/partners/ebec/promo/quintadejugais.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="http://nomini.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:135px"
+                     src="../assets/img/partners/ebec/promo/nomini.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="http://vidaedu.com/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:75px"
+                     src="../assets/img/partners/ebec/promo/vidaedu.png">
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a href="http://www.royalschool.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:100px"
+                     src="../assets/img/partners/ebec/promo/royalschool.png">
+            </a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row vertical-align">
+        <div class="col-md-2">
+            <a href="https://www.nestle-cereals.com/pt/pt/?gclid=CjwKCAjws6jVBRBZEiwAkIfZ2u3zj7FeQqJQHqiBYGFnsF3NI9e9-rXDlSVgVD2Z67gQi-QJAjqxERoCBxgQAvD_BwE"
+               target="_blank">
+                <img class="img-responsive img-center" style="max-height:130px"
+                     src="../assets/img/partners/ebec/promo/nestle.png">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.igus.pt/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:95px"
+                     src="../assets/img/partners/ebec/promo/igus.bmp">
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="http://www.pastelarialatina.com/" target="_blank">
+                <img class="img-responsive img-center" style="max-height:100px"
+                     src="../assets/img/partners/ebec/promo/latina.png">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="container division-blue division-main" id="parceria">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange">Torne-se Nosso parceiro</h2>
+            <br>
+        </div>
+    </div>
+    <div class="row text-white">
+        <div class="col-lg-12">
+            <p class="text-justify">
+                Ao tornar-se nosso parceiro, a sua empresa estará integrada na organização da EBEC Aveiro 2019, com uma
+                equipa dinâmica e empenhada em satisfazer as necessidades de desenvolvimento extracurricular dos estudantes,
+                bem como os interesses da sua empresa. Terá a oportunidade de participar numa feira de empresas e num cocktail
+                network.
+            </p>
+            <p class="text-justify">
+                • Marque presença numa feira de empresas e exponha a sua empresa, produtos e projetos. Terá a oportunidade
+                de trocar experiências com os estudantes num ambiente informal.
+            </p>
+            <p class="text-justify">
+                • Beneficie do acesso aos currículos disponibilizados, de forma opcional, pelos participantes do evento e
+                estudantes da Universidade de Aveiro presentes na sessão de encerramento.
+            </p>
+            <p class="text-justify">
+                • Direito a trabalhar em sintonia com o Topic Group podendo propor provas, tanto de Case Study como de
+                Team Design, que serão realizadas pelos participantes.
+            </p>
+            <p class="text-justify">
+                Como nosso parceiro, beneficiará de interações estreitas com estudantes da universidade de Aveiro, através
+                de uma feira de empresas e um cocktail network, conseguindo recolher diversas perceções através de uma intensa
+                partilha de conhecimentos.
+            </p>
+            <p class="text-justify">
+                A sua empresa aumentará ainda a visibilidade entre os estudantes da Universidade de Aveiro, conhecidos pelo
+                seu dinamismo, inovação e empreendedorismo, através de promoção disponibilizada pelo BEST Aveiro.
+            </p>
+            <p class="text-justify">
+                Caso esteja interessado em ser nosso parceiro, contacte-nos por meio <a class="text-orange" href="#contactos">
+                daqui</a> ou <a href="#info" class="text-orange">daqui</a>.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+</section>
+
+<section class="container division-gray division-main" id="contactos">
+    <div class="row">
+        <div class="col-lg-12 text-center text-black">
+            <h2 class="section-heading text-blue">Contactos</h2>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="team-member">
+                <img src="img/team/david.jpg" class="img-responsive img-circle img-contact"
+                     alt="">
+                <h4 class="text-blue">Pedro D. Gomes</h4>
+                <p class="text-black">Coordenador da EBEC Aveiro 2019</p>
+                <p>
+                    <i class="fa fa-envelope"></i><a href="mailto:pedrodavid1969@gmail.com">
+                    pedrodavid1969@gmail.com</a><br>
+                    <i class="fa fa-phone"></i> <b>+(351) 938 097 366</b>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="team-member text-center">
+                <img src="img/team/jorge.jpg"
+                     class="img-responsive img-circle img-contact" alt="">
+                <h4 class="text-blue">Jorge Silva</h4>
+                <p class="text-black">Presidente do BEST Aveiro</p>
+                <p>
+                    <i class="fa fa-envelope"></i><a href="mailto:jorge.silva@BEST.eu.org">
+                    jorge.silva@BEST.eu.org</a><br>
+                    <i class="fa fa-phone"></i> <b>+(351) 917 077 293</b>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="team-member text-center">
+                <img src="img/team/dalila.jpg" class="img-responsive img-circle img-contact"
+                     alt="">
+                <h4 class="text-blue">Dalila Marques</h4>
+                <p class="text-black">Responsável de Relações Empresariais</p>
+                <p>
+                    <i class="fa fa-envelope"></i><a href="mailto:dalilarakelam@gmail.com">
+                    dalilarakelam@gmail.com</a><br>
+                    <i class="fa fa-phone"></i> <b>+(351) 917 369 988</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container division-blue division-main" id="best">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange">Sobre o BEST Aveiro</h2>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <img class="img-responsive img-center" src="img/logos/best-aveiro-color.png">
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 text-white">
+            <p class="text-justify">
+                Fundado oficialmente em 2010, o Grupo Local BEST Aveiro, sediado na Universidade de Aveiro, conta com cerca
+                de 45 membros ativos das áreas de Ciências, Tecnologias e Engenharias. Ao longo dos seus 8 anos de história
+                distinguiu-se pela diversidade e qualidade de eventos organizados. Estes abrangem os estudantes a nível
+                local, nacional e europeu, focando-se ainda no próprio desenvolvimento dos membros da Associação para que
+                estes estejam em constante progressão e aprendizagem.
+            </p>
+            <p class="text-justify">
+                O BEST Aveiro oferece aos estudantes a oportunidade de participar em eventos que visam a complementaridade
+                dos seus estudos, organizando anualmente uma competição na área científico-tecnológica, formações em Soft
+                ou Hard skills, um curso sazonal e um simpósio de inovação tecnológica. Com o objetivo de estreitar a relação
+                entre estudantes e empresas, o BEST Aveiro organiza ainda uma feira de empresas anual,integrada na competição
+                EBEC, oferecendo aos estudantes oportunidades relevantes para o seu futuro profissional e às empresas maior
+                facilidade de comunicação e recrutamento da comunidade académica.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="division-gray division-main container" id="info">
+    <div class="row">
+        <div class="col-lg-12 text-center text-white">
+            <h2 class="section-heading text-blue">Informações</h2>
+            <br/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 hidden-xs">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="map-container" class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-offset-1 col-lg-4 text-center team-member">
+            <h4 class="text-blue"><i class="fa fa-home"></i> Morada</h4>
+            <p class="text-black text-muted">
+                <b>Incubadora de Empresas da Universidade de Aveiro<br/>
+                Campus Universitário de Santiago, Edifício 1<br/>
+                3810-193 Aveiro<br/>
+                    Portugal</b>
+            </p>
+            <h4  class="text-blue"><i class="fa fa-phone"></i> Telefone</h4>
+            <p class="text-black">
+                +351 925 030 168
+            </p>
+            <h4  class="text-blue"><i class="fa fa-envelope"></i> Email</h4>
+            <p class="text-white">
+                <a href="mailto:aveiro@BEST.eu.org">aveiro@BEST.eu.org</a><br/>
+            </p>
+            <br/>
+            <ul class="list-inline">
+                <li>
+                    <a href="http://bestaveiro.web.ua.pt/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#91C044"></i>
+                            <i class="fas fa-globe fa-stack-1x fa-inverse" style="color:#294F66"></i>
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/EBEC.aveiro/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#91C044"></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse" style="color:#294F66"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/best.aveiro/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#91C044"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse" style="color:#294F66"></i>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/company/best-aveiro" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#91C044"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color:#294F66"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.flickr.com/photos/bestaveiro" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#91C044"></i>
+                            <i class="fab fa-flickr fa-stack-1x fa-inverse" style="color:#294F66"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        function init_map() {
+            var var_location = new google.maps.LatLng(40.636002,-8.6577);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 18
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title:"BEST Aveiro"});
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-568b1027a1f2a864" async="async"></script>
+
+
+</section>
+
+<footer class="container-fluid">
+    <div class="row vertical-align">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <a target="_blank" href="https://www.ua.pt/">
+                <img class="img-responsive img-grayscale img-footer-2 img-center hidden-xs" alt="Universidade de Aveiro"
+                     src="img/partners/annual/ua.png">
+                <img class="img-responsive img-grayscale img-footer-3 img-center hidden-lg hidden-md hidden-sm"
+                     alt="Universidade de Aveiro" src="img/partners/annual/ua-2.gif">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <a target="_blank" href="http://www.ipdj.pt/">
+                <img class="img-responsive img-grayscale img-footer img-center" alt="IPDJ"
+                     src="img/partners/annual/ipdj.png">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <a target="_blank" href="http://www.ordemengenheiros.pt/">
+                <img class="img-responsive img-grayscale img-footer img-center" alt="Ordem dos Engenheiros"
+                     src="img/partners/annual/ordem.png">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
