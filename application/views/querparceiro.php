@@ -52,12 +52,12 @@
                     // When the user clicks the button, open the modal
                     btn.onclick = function() {
                         modal.style.display = "block";
-                    }
+                    };
 
                     // When the user clicks on <span> (x), close the modal
                     span.onclick = function() {
                         modal.style.display = "none";
-                    }
+                    };
 
                     // When the user clicks anywhere outside of the modal, close it
                     window.onclick = function(event) {
@@ -124,9 +124,9 @@
             </div>
         <div class="col-md-5">
             <div class="fotorama" data-width="400" ata-ratio="4/3" data-nav="thumbs" data-thumbheight="48"  data-loop="true" data-autoplay="true" data-stopautoplayontouch="false">
-                <img src="../assets/img/media/2016/23.jpg">
-                <img src="../assets/img/media/2016/24.jpg">
-                <img src="../assets/img/media/2016/25.jpg">
+                <img src="../../assets/img/media/2016/23.jpg">
+                <img src="../../assets/img/media/2016/24.jpg">
+                <img src="../../assets/img/media/2016/25.jpg">
 
             </div>
 

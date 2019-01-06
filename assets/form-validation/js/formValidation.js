@@ -2312,7 +2312,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     // Helper methods, which can be used in validator class
     FormValidation.Helper = {
         /**
@@ -2470,7 +2470,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             base64: {
@@ -2499,7 +2499,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             between: {
@@ -2581,7 +2581,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             bic: {
@@ -2612,7 +2612,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.Validator.blank = {
         /**
          * Placeholder validator that can be used to display a custom validation message
@@ -2641,7 +2641,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             callback: {
@@ -2686,7 +2686,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             choice: {
@@ -2760,7 +2760,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             color: {
@@ -2908,7 +2908,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             creditCard: {
@@ -3018,7 +3018,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             cusip: {
@@ -3077,7 +3077,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             cvv: {
@@ -3232,7 +3232,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             date: {
@@ -3591,7 +3591,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             different: {
@@ -3680,7 +3680,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             digits: {
@@ -3708,7 +3708,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             ean: {
@@ -3752,7 +3752,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             ein: {
@@ -3814,7 +3814,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             emailAddress: {
@@ -3905,7 +3905,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             file: {
@@ -3997,7 +3997,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             greaterThan: {
@@ -4074,7 +4074,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             grid: {
@@ -4115,7 +4115,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             hex: {
@@ -4144,7 +4144,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             iban: {
@@ -4391,7 +4391,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             id: {
@@ -5850,7 +5850,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             identical: {
@@ -5922,7 +5922,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             imei: {
@@ -5970,7 +5970,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             imo: {
@@ -6019,7 +6019,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             integer: {
@@ -6055,7 +6055,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             ip: {
@@ -6123,7 +6123,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             isbn: {
@@ -6213,7 +6213,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             isin: {
@@ -6276,7 +6276,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             ismn: {
@@ -6339,7 +6339,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             issn: {
@@ -6389,7 +6389,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             lessThan: {
@@ -6466,7 +6466,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             mac: {
@@ -6495,7 +6495,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             meid: {
@@ -6582,7 +6582,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             notEmpty: {
@@ -6624,7 +6624,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             numeric: {
@@ -6671,7 +6671,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             phone: {
@@ -6891,7 +6891,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             regexp: {
@@ -6937,7 +6937,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             remote: {
@@ -7073,7 +7073,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             rtn: {
@@ -7115,7 +7115,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             sedol: {
@@ -7159,7 +7159,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
 		'en_US': {
 			siren: {
@@ -7191,7 +7191,7 @@ if (typeof jQuery === 'undefined') {
 		}
 	};
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
 		'en_US': {
 			siret: {
@@ -7233,7 +7233,7 @@ if (typeof jQuery === 'undefined') {
 		}
 	};
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             step: {
@@ -7302,7 +7302,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             stringCase: {
@@ -7343,7 +7343,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             stringLength: {
@@ -7459,7 +7459,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             uri: {
@@ -7579,7 +7579,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             uuid: {
@@ -7630,7 +7630,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             vat: {
@@ -9054,7 +9054,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             vin: {
@@ -9107,7 +9107,7 @@ if (typeof jQuery === 'undefined') {
         }
     };
 }(jQuery));
-;(function($) {
+(function ($) {
     FormValidation.I18n = $.extend(true, FormValidation.I18n || {}, {
         'en_US': {
             zipCode: {

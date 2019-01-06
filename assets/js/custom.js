@@ -11,7 +11,7 @@ var Frontpage = function() {
 	}
 	exports.init = init;
 	return exports;
-}
+};
 var frontpage = new Frontpage();
 frontpage.public_function();
 $(document).ready(function() {
