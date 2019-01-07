@@ -426,14 +426,6 @@
   text-decoration:none;
 }
 
-/* Map */
-#map-container {
-  min-width: 320px;
-  min-height: 320px;
-  width: 100%;
-  height: 100%;
-}
-
  .panel-heading [data-toggle="collapse"]:after {
    font-family: 'Glyphicons Halflings';
    content: "\e072"; /* "play" icon */
@@ -463,7 +455,7 @@
 
 /*Divisions*/
 .division-gray{
-  background-color: rgba(200,200,200,0.7);
+  background-color: rgba(200,200,200,0.9);
 }
 
 .division-blue{
@@ -630,11 +622,6 @@ footer{
   display: flex;
   align-items: center;
 }
-
-.vertical-alignment{
-  vertical-align:middle;
-}
-
 
 .entrada{
   margin-top:80px;
