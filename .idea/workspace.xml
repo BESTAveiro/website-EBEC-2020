@@ -3,169 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69361acb-f31d-4578-ba4d-4cc2c15650b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/querparceiro.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/querparceiro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/_DS_Store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app/ebecaveiro2016.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/_DS_Store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bg-aveiro.jpf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome-ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/font-awesome-ie7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome-ie7.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/font-awesome-ie7.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/fontawesome-webfont (1).woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/fontawesome-webfont (1).woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/font/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfontba72.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfontba72.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfontba72.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfontba72.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfontba72.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfontba72.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfontba72.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfontba72.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfontd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/css/formValidation.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/css/formValidation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/css/formValidation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/css/formValidation.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/formValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/formValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/formValidation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/formValidation.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/foundation.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/pure.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/pure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/pure.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/pure.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/semantic.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/semantic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/semantic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/semantic.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/uikit.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/uikit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/framework/uikit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/framework/uikit.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ar_MA.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ar_MA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/be_FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/be_FR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/be_NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/be_NL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/bg_BG.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/bg_BG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ca_ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ca_ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/cs_CZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/cs_CZ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/da_DK.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/da_DK.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/de_DE.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/de_DE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/en_US.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/en_US.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/es_CL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/es_CL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/es_ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/es_ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/eu_ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/eu_ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/fa_IR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/fa_IR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/fi_FI.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/fi_FI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/fr_FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/fr_FR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/gr_EL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/gr_EL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/he_IL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/he_IL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/hi_IN.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/hi_IN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/hu_HU.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/hu_HU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/id_ID.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/id_ID.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/it_IT.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/it_IT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ja_JP.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ja_JP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/nl_NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/nl_NL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/no_NO.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/no_NO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/pl_PL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/pl_PL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/pt_BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/pt_PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/pt_PT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ro_RO.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ro_RO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ru_RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ru_RU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/sk_SK.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/sk_SK.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/sq_AL.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/sq_AL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/sr_RS.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/sr_RS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/sv_SE.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/sv_SE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/th_TH.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/th_TH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/tr_TR.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/tr_TR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/ua_UA.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/ua_UA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/vi_VN.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/vi_VN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/zh_CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/form-validation/js/language/zh_TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/form-validation/js/language/zh_TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/ebec-aveiro-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/ebec-aveiro-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/ebec-aveiro.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/ebec-aveiro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/inicial.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/inicial.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/job-fair.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/job-fair.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/main-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/main-background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/event/news-job-fair-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/event/news-job-fair-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/best-aveiro-color.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/best-aveiro-color.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/best-aveiro-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/best-aveiro-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/btd.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/btd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/ebec-aveiro.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/ebec-aveiro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/ebec-final-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/ebec-final-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/ebec-pt-color.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/ebec-pt-color.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/ebec-pt-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/ebec-pt-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/ebec_aveiro_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/ebec_aveiro_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/linha.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/linha.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/roldana-branca.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/roldana-branca.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logos/roldana-laranja.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/logos/roldana-laranja.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/annual/ipdj.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/annual/ipdj.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/annual/ordem.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/annual/ordem.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/annual/ua-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/annual/ua-2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/annual/ua.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/annual/ua.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Gold/voltalia.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Gold/voltalia.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/CanYouEscape.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/CanYouEscape.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/bocadolobo.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/bocadolobo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/igus.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/igus.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/latina.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/latina.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/mirtiflor.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/mirtiflor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/nestle.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/nestle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/nomini.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/nomini.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/quintadejugais.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/quintadejugais.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/royalschool.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/royalschool.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/tugabox.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/tugabox.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/vidaedu.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/vidaedu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/®–QUINTADEJUGAIS-Logotipo-2014 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Promo/®–QUINTADEJUGAIS-Logotipo-2014 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/Colep.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/Colep.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/altice.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/altice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/alticelabs.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/alticelabs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/blip.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/blip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/btl.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/btl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/genius_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/genius_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/geniuslogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/geniuslogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Silver/inovaria.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/Silver/inovaria.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/main_sponsor/Mahle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/main_sponsor/Mahle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/main_sponsor/Mahle.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/partners/ebec/main_sponsor/Mahle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/ana-moura.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/ana-moura.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/ana-rita.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/ana-rita.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/beatriz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/beatriz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/dalila.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/dalila.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/david.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/david.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/jorge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/jorge.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/team/renan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/team/renan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/testimonials/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/testimonials/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/testimonials/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/testimonials/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/testimonials/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/testimonials/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/testimonials/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/testimonials/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/testimonials/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/img/testimonials/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/_DS_Store" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/_DS_Store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/agency.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/agency.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.flexslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/jquery.flexslider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.localscroll-1.2.7-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/jquery.localscroll-1.2.7-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.scrollTo-1.4.3.1-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/jquery.scrollTo-1.4.3.1-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/regulation/Regulamento.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/application/assets/regulation/Regulamento.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/assets/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13498">
-              <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+            <state relative-caret-position="233">
+              <caret line="1428" column="55" selection-start-line="1428" selection-start-column="55" selection-end-line="1428" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#p#1;n#div#1;n#div#0;n#section#0;n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#2;n#div#1;n#div#0;n#section#0;n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -251,50 +89,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/assets/js/agency.js">
+        <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/humans.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/assets/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4046">
+            <state relative-caret-position="-5727">
               <caret line="307" column="1" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
             </state>
           </provider>
@@ -321,8 +118,8 @@
         <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/application/views/querparceiro.php" />
-        <option value="$PROJECT_DIR$/application/views/index.html" />
         <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/application/views/index.html" />
       </list>
     </option>
   </component>
@@ -371,12 +168,6 @@
               <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -394,11 +185,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\views" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\assets" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\event" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\logos" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\querparceiro" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\css" />
@@ -431,7 +222,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545263903008</updated>
       <workItem from="1545263907644" duration="37726000" />
-      <workItem from="1545562416359" duration="136525000" />
+      <workItem from="1545562416359" duration="137939000" />
     </task>
     <task id="LOCAL-00001" summary="Maybe Final">
       <created>1545264257202</created>
@@ -475,21 +266,35 @@
       <option name="project" value="LOCAL" />
       <updated>1546694541910</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Maybe Final - 2000">
+      <created>1546811009532</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546811009532</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Maybe Final - 2001">
+      <created>1546811623501</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546811623501</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174251000" />
+    <option name="totallyTimeSpent" value="175665000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20272315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -530,31 +335,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Maybe Final" />
     <MESSAGE value="Maybe Final - teste" />
     <MESSAGE value="Maybe Final - 3" />
     <MESSAGE value="Maybe Final - 5" />
     <MESSAGE value="Maybe Final - 1999" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final - 1999" />
+    <MESSAGE value="Maybe Final - 2000" />
+    <MESSAGE value="Maybe Final - 2001" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final - 2001" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/img/backgrounds/fundo9.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/logos/best-aveiro-color.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/best-aveiro-color.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/logos/best-aveiro-white.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/best-aveiro-white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/logos/ebec-pt-color.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec-pt-color.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec-pt-2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/logos/ebec-final-white.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec-final-white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec-final.png">
@@ -563,7 +377,7 @@
     <entry file="file://$PROJECT_DIR$/assets/img/home/ebec1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/logos/ebec-pt-white.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec-pt-white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/home/team_design.png">
@@ -608,7 +422,7 @@
     <entry file="file://$PROJECT_DIR$/assets/img/partners/annual/print4fun3d.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/partners/annual/ua-2.gif">
+    <entry file="file://$PROJECT_DIR$/assets/img/partners/annual/ua-2.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/media/2015/1.jpg">
@@ -636,28 +450,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/news-job-fair-1.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/news-job-fair-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/main-background.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/main-background.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/job-fair.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/job-fair.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/ebec-aveiro-2.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/ebec-aveiro-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/inicial.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/inicial.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/img/event/ebec-aveiro.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/event/ebec-aveiro.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/css/bootstrap-theme.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1678" />
       </provider>
@@ -665,20 +479,64 @@
     <entry file="file://$PROJECT_DIR$/application/assets/css/bg-aveiro.jpf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/assets/form-validation/css/formValidation.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4046">
+        <state relative-caret-position="-257">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/file_existence.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/_DS_Store">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/humans.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/agency.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5727">
           <caret line="307" column="1" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/form-validation/css/formValidation.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/index.html">
+    <entry file="file://$PROJECT_DIR$/application/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13498">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
+        <state relative-caret-position="233">
+          <caret line="1428" column="55" selection-start-line="1428" selection-start-column="55" selection-end-line="1428" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#b#0;n#p#1;n#div#1;n#div#0;n#section#0;n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#2;n#div#1;n#div#0;n#section#0;n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -733,50 +591,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/js/agency.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/file_existence.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/assets/_DS_Store">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/humans.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
