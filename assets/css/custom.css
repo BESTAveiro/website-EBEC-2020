@@ -479,14 +479,15 @@
 }
 
 .img-footer-2{
-  max-width: 190px ;
-  max-height: 90px;
+    max-width: 190px;
+    max-height: 110px;
   padding: 5px;
 }
 
 .img-footer-3{
   max-width: 85px;
   padding:5px;
+    vertical-align: top;
 }
 
 .img-contact {
