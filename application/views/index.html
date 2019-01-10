@@ -47,45 +47,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="favicon.ico">
-
     <link name="author" href="Faisal Russel(russel365)">
-
-    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/35/6/intl/pt_pt/onion.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="//s7.addthis.com/static/layers.c387ea0d8ef6d16b44e4.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.scrollToTop').hide();
-
-            //Check to see if the window is top if not then display button
-            $(window).scroll(function(){
-                console.log((window.innerHeight - $(this).scrollTop())/window.innerHeight);
-                if($(window).scrollTop() + $(window).height() == $(document).height()) {
-                    $('.scrollToTop').fadeIn();
-                } else {
-                    $('.scrollToTop').fadeOut();
-                }
-            });
-
-            //Click event to scroll to top
-            $('.scrollToTop').click(function(){
-                $('html, body').animate({scrollTop : 0},800);
-                return false;
-            });
-
-        });
-    </script>
-    <a href="#" class="scrollToTop hidden-xs"></a>
 
 </head>
 <body>
-
-<nav class="navbar navbar-default navbar-fixed-top division-blue">
+<nav class="navbar navbar-default navbar-fixed-top division-blue" style="border:none;">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -93,9 +62,12 @@
             <a class="navbar-brand" href="#">
                 <img class="nav-logo" src="../../assets/img/logos/roldana-branca.png">
             </a>
+            <a class="pull-right hidden-lg hidden-md hidden-sm" href="http://bestaveiro.web.ua.pt/" target="_blank">
+                <img class="nav-logo" src="../../assets/img/logos/best-aveiro-white.png">
+            </a>
         </div>
 
-        <div class="pull-right hidden-xs">
+        <div class="navbar-right hidden-xs">
             <a target="_blank" href="http://bestaveiro.web.ua.pt/">
                 <img class="nav-logo" src="../../assets/img/logos/best-aveiro-white.png">
             </a>
@@ -147,7 +119,7 @@
 
 
 <!--entrada-->
-<section class="container division-gray division-main entrada">
+<div class="container division-gray division-main entrada">
     <div class="row colunas"></div>
     <div class="row">
         <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
@@ -160,12 +132,10 @@
         </div>
     </div>
     <div class="row colunas"></div>
-</section>
+</div>
 
 
-
-
-<section class="tabs division-blue division-main container" id="ebec">
+<div class="tabs division-blue division-main container" id="ebec">
 
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -212,15 +182,13 @@
     </ul>
 
     <div class="slider">
-        <div class="indicator">
-
-        </div>
+        <div class="indicator"></div>
     </div>
 
     <section class="content">
 
         <!-- EBEC Aveiro -->
-        <section class="division-blue container-fluid vertical-align">
+        <section class="division-blue container-fluid vertical-align seccao">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img class="img-responsive" src="../../assets/img/event/ebec-aveiro.png">
@@ -246,13 +214,12 @@
                             Inscreve-te já!<span class="fa fa-chevron-right"></span>
                         </a>
                     </div>
-                    <!---->
                 </div>
             </div>
         </section>
 
         <!-- Modalidades -->
-        <section class="division-blue vertical-align container-fluid">
+        <section class="division-blue vertical-align container-fluid seccao">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-orange">Modalidades</h2>
@@ -289,7 +256,7 @@
 
 
         <!--BTD-->
-        <section class="division-blue container-fluid">
+        <section class="division-blue container-fluid seccao">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img class="img-responsive img-center" src="../../assets/img/logos/btd.png">
@@ -346,7 +313,7 @@
         </section>
 
     </section>
-</section>
+</div>
 
 
 <section class="container division-gray division-main" id="programa">
@@ -475,7 +442,7 @@
     </div>
 </section>
 
-<section class="container division-blue division-main" id="testemunhos">
+<div class="container division-blue division-main" id="testemunhos">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange hidden-xs">Testemunhos</h2>
@@ -702,9 +669,9 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="division-main division-gray container" id="apply">
+<div class="division-main division-gray container" id="apply">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue">Inscrição</h2>
@@ -747,10 +714,10 @@
             </p>
         </div>
     </div>
-</section>
+</div>
 
 
-<section class="container division-blue division-main" id="faqs">
+<div class="container division-blue division-main" id="faqs">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange">FAQ</h2>
@@ -965,14 +932,10 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 
-
-
-
-
-<section class="container division-gray division-main" id="equipa">
+<div class="container division-gray division-main" id="equipa">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue">Equipa</h2>
@@ -1023,10 +986,10 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- Partners -->
-<section class="division-gray division-main container hidden" id="partners">
+<div class="division-gray division-main container hidden" id="partners">
     <!--Primeira Linha-->
     <div class="row">
         <br>
@@ -1175,9 +1138,9 @@
             </a>
         </div>
     </div>
-</section>
+</div>
 
-<section class="container division-blue division-main" id="parceria">
+<div class="container division-blue division-main" id="parceria">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange">Torne-se Nosso parceiro</h2>
@@ -1222,9 +1185,9 @@
     <div class="row">
 
     </div>
-</section>
+</div>
 
-<section class="container division-gray division-main" id="contactos">
+<div class="container division-gray division-main" id="contactos">
     <div class="row">
         <div class="col-lg-12 text-center text-black">
             <h2 class="section-heading text-blue">Contactos</h2>
@@ -1272,8 +1235,9 @@
             </div>
         </div>
     </div>
-</section>
-<section class="container division-blue division-main" id="best">
+</div>
+
+<div class="container division-blue division-main" id="best">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange">Sobre o BEST Aveiro</h2>
@@ -1303,12 +1267,13 @@
 
         </div>
     </div>
-</section>
+</div>
 
-<section class="division-gray division-main container" id="info">
+<div class="division-gray division-main container" id="info">
     <div class="row">
         <div class="col-lg-12 text-center text-white">
-            <h2 class="section-heading text-blue">Informações</h2>
+            <h2 class="section-heading text-blue hidden-xs">Informações</h2>
+            <h2 class="section-heading text-blue hidden-lg hidden-md hidden-sm">Infor-<br>mações</h2>
             <br/>
         </div>
     </div>
@@ -1319,7 +1284,7 @@
                 <iframe class="embed-responsive-item"
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q=BEST Aveiro, Aveiro, PT">
                 </iframe>
-                </div>
+            </div>
         </div>
 
         <div class="col-lg-6 col-md-6 text-center">
@@ -1385,7 +1350,7 @@
             </ul>
         </div>
     </div>
-</section>
+</div>
 
 <footer class="container-fluid">
     <div class="row vertical-align">
@@ -1405,7 +1370,6 @@
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>

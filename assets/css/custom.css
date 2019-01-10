@@ -90,8 +90,6 @@
 }
 
 .tabs .content section {
-    padding-top: 50px;
-  display: none;
   -webkit-animation-name: content;
   animation-name: content;
   -webkit-animation-direction: normal;
@@ -102,7 +100,9 @@
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  display: none;
   line-height: 1.4;
+  padding-top: 40px;
 }
 .tabs .content section h2 {
   display: none;
@@ -248,37 +248,27 @@
 }
 /*navbar*/
 
-.navbar{border:none;}
-
 .navbar .nav,
 .navbar .nav > li a {
   float:none;
   *display:inline;
   *zoom:1;
-  vertical-align: top;
+  padding: 10px 10px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 100;
   color: white;
-  padding: 10px 10px;
-  -webkit-transition:color 500ms;
-  transition: color 500ms;
 }
 
 .navbar .nav > li a:hover {color:#91C044}
 
 .navbar-brand {
-  float: left;
   font-size: 18px;
   height: 1px;
   line-height: 2px;
   padding: 2px;
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
 }
 
 .navbar .navbar-collapse {
@@ -341,10 +331,6 @@
   font-size: 2.3em;
   text-shadow:none;
   margin-top: 30px;
-}
-
-.item  p:before {
-  font-family: 'Fontawesome';
 }
 
 /*Special button*/
@@ -449,7 +435,8 @@
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*images*/
@@ -500,7 +487,6 @@
   margin: 0 auto;
   vertical-align: middle;
 }
-
 
 h2.section-heading {
   font-size: 40px;
@@ -617,7 +603,8 @@ footer{
   .division-main{
       border-radius: 0;
       margin-bottom: 0;
-      padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .division-gray{
     background-color: rgba(200,200,200,1);
