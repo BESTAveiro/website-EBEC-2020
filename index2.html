@@ -41,90 +41,74 @@
     <script src="assets/form-validation/js/formValidation.min.js" type="text/javascript"></script>
     <script src="assets/form-validation/js/framework/bootstrap.min.js" type="text/javascript"></script>
 
-
-    <link href="assets/css/custom.css" rel="stylesheet">
     <script src="assets/js/custom.js" type="text/javascript"></script>
 
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" rel="stylesheet">
 
     <link href="Faisal Russel(russel365)" name="author">
+    <style>
+        .division-gray {
+            background-color: rgba(200, 200, 200, 0.9);
+        }
+
+        .division-blue {
+            background-color: #294F66;
+        }
+
+        .division-orange {
+            background-color: #EEA225;
+        }
+
+        .division-main {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .jumbotron {
+            background-color: rgba(200, 200, 200, 0.9);
+        }
+
+        .entrada {
+            margin-top: 80px;
+        }
+
+        .colunas {
+            height: 69px;
+        }
+
+        body {
+            background-color: red;
+        }
+    </style>
+
 
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top division-blue" style="border:none;">
-    <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-target="#myNavbar" data-toggle="collapse" type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img class="nav-logo" src="assets/img/logos/roldana-branca.png">
-            </a>
-            <a class="pull-right hidden-lg hidden-md hidden-sm" href="http://bestaveiro.web.ua.pt/" target="_blank">
-                <img class="nav-logo" src="assets/img/logos/best-aveiro-white.png">
-            </a>
+            <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
-
-        <div class="navbar-right hidden-xs" style="border:red solid 1px">
-            <a href="http://bestaveiro.web.ua.pt/" target="_blank">
-                <img class="nav-logo" src="assets/img/logos/best-aveiro-white.png">
-            </a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav specialButton">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre a EBEC
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#ebec">A EBEC Aveiro</a></li>
-                        <li><a href="#programa">Programa</a></li>
-                        <li><a href="#ebecPT">EBEC Portugal</a></li>
-                        <li><a href="#ebecAnt">Edições Anteriores</a></li>
-                        <li><a href="#testemunhos">Testemunhos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        Mais sobre a EBEC<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#apply">Inscrição</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#equipa">A Equipa</a></li>
-                        <li><a href="#parceria">Torne-se parceiro</a></li>
-                        <li><a href="#contactos">Contactos</a></li>
-                        <li><a class="hidden" href="#partners">Parceiros</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        A Organização<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#best">Sobre o BEST Aveiro</a></li>
-                        <li><a href="#info">Informações</a></li>
-                    </ul>
-                </li>
-                <li class="hidden">
-                    <a href="#">EN</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
     </div>
 </nav>
 
 
 <!--entrada-->
-<div class="container division-gray division-main entrada">
-    <div class="row colunas"></div>
+<div class="jumbotron entrada">
+    <div class="colunas row"></div>
     <div class="row">
-        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
-            <img class="img-responsive" src="assets/img/logos/ebec-aveiro.png">
+        <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10">
+            <img alt="oi" class="img-responsive img-center" src="assets/img/logos/ebec-aveiro.png">
         </div>
     </div>
     <div class="row">
@@ -132,11 +116,11 @@
             <h1 class="text-center text-blue big-number">14, 15, 16, 17 e 20 de março</h1>
         </div>
     </div>
-    <div class="row colunas"></div>
+    <div class=" row colunas"></div>
 </div>
 
 
-<div class="tabs division-blue division-main container" id="ebec">
+<div class="tabs division-blue division-main container-fluid" id="ebec">
 
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -145,51 +129,39 @@
         </div>
     </div>
 
-    <input checked="" id="tab1" name="tab-control" type="radio">
-    <input id="tab2" name="tab-control" type="radio">
-    <input id="tab3" name="tab-control" type="radio">
-    <input id="tab4" name="tab-control" type="radio">
+    <ul class="nav nav-justified nav-pills list-inline">
+        <li class="active">
+            <a data-toggle="tab" href="#rondalocal">
+                <span><i class="fas fa-map-pin"></i> Ronda Local</span>
+            </a>
+        </li>
+        <li>
+            <a data-toggle="tab" href="#modalidades">
+                <span><i class="fas fa-tools"></i> Modalidades</span>
+            </a>
 
-    <!--    Mini-ícones-->
-    <ul>
-        <li>
-            <label class="text-center" for="tab1" role="button">
-                <i class="fas fa-map-pin"></i>
-                <br>
-                <span>Ronda Local</span>
-            </label>
         </li>
         <li>
-            <label class="text-center" for="tab2" role="button">
-                <i class="fas fa-tools"></i>
-                <br>
-                <span>Modalidades</span>
-            </label>
+            <a data-toggle="tab" href="#btd">
+                <span><i class="fas fa-chalkboard-teacher"></i> Treinamento</span>
+            </a>
         </li>
         <li>
-            <label class="text-center" for="tab3" role="button">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <br>
-                <span>Treinamento</span>
-            </label>
-        </li>
-        <li>
-            <label class="text-center" for="tab4" role="button">
-                <i class="fas fa-briefcase"></i>
-                <br>
-                <span>Feira De Empresas</span>
-            </label>
+            <a data-toggle="tab" href="#jobfair">
+                <span><i class="fas fa-briefcase"></i> Feira De Empresas</span>
+            </a>
+
         </li>
     </ul>
 
-    <div class="slider">
+    <div class="slider hidden">
         <div class="indicator"></div>
     </div>
 
-    <section class="content">
+    <div class="tab-content content">
 
         <!-- EBEC Aveiro -->
-        <section class="division-blue container-fluid vertical-align seccao">
+        <section class="tab-pane fade in active division-blue container-fluid vertical-align seccao" id="rondalocal">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img class="img-responsive" src="assets/img/event/ebec-aveiro.png">
@@ -224,7 +196,7 @@
         </section>
 
         <!-- Modalidades -->
-        <section class="division-blue vertical-align container-fluid seccao">
+        <section class="tab-pane fade division-blue vertical-align container-fluid seccao" id="modalidades">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-orange">Modalidades</h2>
@@ -266,7 +238,7 @@
 
 
         <!--BTD-->
-        <section class="division-blue container-fluid seccao">
+        <section class="tab-pane fade division-blue container-fluid seccao" id="btd">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img class="img-responsive img-center" src="assets/img/logos/btd.png">
@@ -291,7 +263,7 @@
         </section>
 
         <!-- Feira de Empresas -->
-        <section class="container-fluid division-blue">
+        <section class="tab-pane fade container-fluid division-blue" id="jobfair">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-orange">Feira de Empresas</h2>
@@ -323,83 +295,8 @@
             </div>
         </section>
 
-    </section>
+    </div>
 </div>
-
-
-<section class="container division-gray division-main" id="programa">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="section-heading text-blue text-center">Programa</h2>
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="text-center col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
-            <h4 class="service-heading text-blue" style="font-size: 24px;">14 Março</h4>
-            <h5 class="text-blue" style="font-size:22px">Quinta</h5>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">10:30 - 15:30</p>
-                <p style="font-size:15px;"><b>Feira de Empresas</b></p>
-            </div>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">16:00 - 16:30</p>
-                <p style="font-size:15px;"><b>Cocktail Network</b></p>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4">
-            <h4 class="service-heading text-blue" style="font-size: 24px;">15 Março</h4>
-            <h5 class="text-blue" style="font-size:22px">Sexta</h5>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">18:00 - 20:00</p>
-                <p style="font-size:15px;"><b>Best Training Days</b></p>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4">
-            <h4 class="service-heading text-blue" style="font-size: 24px;">16 Março</h4>
-            <h5 class="text-blue" style="font-size:22px">Sábado</h5>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">09:30 - 10:00</p>
-                <p style="font-size:15px;"><b>Check-in</b></p>
-            </div>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">10:30 - 11:00</p>
-                <p style="font-size:15px;"><b>Opening Session</b></p>
-            </div>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">12:30 - 13:30</p>
-                <p style="font-size:15px;"><b>Lunch</b></p>
-            </div>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">14:00 - 00:00</p>
-                <p style="font-size:15px;"><b>Competition</b></p>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-6">
-            <h4 class="service-heading text-blue" style="font-size: 24px;">17 Março</h4>
-            <h5 class="text-blue" style="font-size:22px">Domingo</h5>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">00:00 - 14:00</p>
-                <p style="font-size:15px;"><b>Competition</b></p>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-6">
-            <h4 class="service-heading text-blue" style="font-size: 24px;">20 Março</h4>
-            <h5 class="text-blue" style="font-size:22px">Quarta</h5>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">13:30 - 17:30</p>
-                <p style="font-size:15px;"><b>Presentations*</b></p>
-            </div>
-            <div style="vertical-align: middle">
-                <p style="font-size:18px">18:00 - 18:30</p>
-                <p style="font-size:15px;"><b>Closing Session*</b></p>
-            </div>
-            <div>
-                <p style="font-size:10px"><b>*Horários sujeito a mudanças</b></p>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 <!-- EBEC Portugal -->
 <section class="division-blue container division-main" id="ebecPT">
@@ -412,9 +309,9 @@
                     {name: "First Class", price: 1199.99}
                 ];
                 console.log("document ready");
-//--- Inicialização dos elementos html
+                //--- Inicialização dos elementos html
                 console.log("adding <select> options");
-//--- Lista de opções - elemento em branco (a pedir para selecionar ...)
+                //--- Lista de opções - elemento em branco (a pedir para selecionar ...)
                 $('#flightClasses').append($('<option>', {
                     value: '',
                     text: 'Choose'
@@ -467,15 +364,46 @@
 </section>
 
 <section class="division-main division-gray container" id="ko">
-    <div data-bind="text: personName"></div>
-    <script>
-        $("document").ready(function{
-            var myViewModel = {
-                personName: ko.observable("clara")
-            };
-            ko.applBindings(myViewModel);
-        });
+
+    The item is <span data-bind="html: priceRating"></span> today.
+    <script type="text/javascript">
+        var viewModel = {
+            price: ko.observable(49)
+        };
+        viewModel.priceRating = ko.pureComputed(function () {
+            return this.price() > 50 ? "<i>expensive</i>" : "<i>affordable</i>";
+        }, viewModel);
+        ko.applyBindings(viewModel);
     </script>
+
+</section>
+
+<section class="division-main division-gray container" id="ko">
+
+    <table class="table table-striped table-condensed">
+        <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: people" id="er">
+        <tr>
+            <td data-bind="text: firstName"></td>
+            <td data-bind="text: lastName"></td>
+        </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        ko.applyBindings({
+            people: [
+                {firstName: 'Bert', lastName: 'Bertington'},
+                {firstName: 'Charles', lastName: 'Charlesforth'},
+                {firstName: 'Denise', lastName: 'Dentiste'},
+                {firstName: 'catra', lastName: 'lixador'}]
+        }, document.getElementById("er"));
+    </script>
+
 </section>
 
 <section class="division-main division-gray container" id="ebecAnt">
@@ -503,7 +431,7 @@
     </div>
 </section>
 
-<div class="container division-blue division-main" id="testemunhos">
+<div id="testemunhos" style="margin-bottom:20px">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange hidden-xs">Testemunhos</h2>
@@ -511,231 +439,52 @@
             <h3 class="section-subheading text-orange">Professores e Participantes</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel"
-                 style="padding-left:0px;padding-right:0px;">
-                <!-- Bottom Carousel Indicators -->
-                <ol class="carousel-indicators" style="margin-bottom:0px;">
-                    <li class="active" data-slide-to="0" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="1" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="2" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="3" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="4" data-target="#quote-carousel"></li>
-                </ol>
+    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#quote-carousel"></li>
+            <li class="" data-slide-to="1" data-target="#quote-carousel"></li>
+            <li class="" data-slide-to="2" data-target="#quote-carousel"></li>
+            <li class="" data-slide-to="3" data-target="#quote-carousel"></li>
+            <li class="" data-slide-to="4" data-target="#quote-carousel"></li>
+        </ol>
 
-                <!-- Carousel Slides / Quotes -->
-                <div class="carousel-inner">
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
 
-                    <!-- Quote 1 -->
-                    <div class="item container-fluid active">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img class="img-circle img-testimonial" src="assets/img/testimonials/1.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> Após ter sido participante da EBEC Aveiro 2016,
-                                    surgiu a oportunidade de ser Coordenador da EBEC Aveiro 2017. Desde então,
-                                    passaram-se
-                                    6 meses em que todos os dias eram diferentes. Era necessário organizar-me
-                                    diariamente,
-                                    para conseguir conciliar os estudos e o trabalho que tinha para a EBEC Aveiro, sem
-                                    nunca
-                                    perder a motivação para nenhum destes aspetos.
-                                    <br>
-                                    Nesta edição, contámos com a presença de um Main Sponsor do evento - a
-                                    Mahle;
-                                    reformulamos a modalidade de Case Study - fizemos 2 provas em 24h;
-                                    mantivemos a
-                                    existência de um workshop e de uma feira de empresas, desta vez com um
-                                    espaço de
-                                    Cocktail Network. A experiência tornou-se assim enriquecedora - criar e
-                                    coordenar
-                                    uma equipa, manter todos motivados, encontrar e resolver problemas que
-                                    apareciam
-                                    todas as semanas - pode parecer duro (e é) mas, na verdade, hoje sou
-                                    facilmente
-                                    capaz de dizer que valeu a pena por todas as aprendizagens que eu e a
-                                    minha
-                                    equipa trouxemos para nós, como estudantes, como futuros trabalhadores e
-                                    também
-                                    como pessoas. <br>
-                                    Por último, gostaria de deixar um apelo a todos: explorem áreas de
-                                    conhecimento que
-                                    não conhecem, saiam da vossa zona de conforto e agarrem as oportunidades
-                                    que aparecem.<i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Pedro Reis<br>
-                                    Coordenador da EBEC Aveiro 2017
-                                    <br><br><br>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 2 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img class="img-circle img-testimonial" src="assets/img/testimonials/2.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> Participar pela primeira vez na EBEC foi mais do
-                                    que aceitar um desafio, foi abraçar novos métodos de pensamento. A ideia era
-                                    participar em algo que testasse a nossa capacidade para resolver um problema em
-                                    equipa.
-                                    <br>
-                                    O mais engraçado foi como a nossa ideia desta aventura mudou, de antes
-                                    para depois! Sabíamos mais ou menos como o desafio iria decorrer, mas foi muito
-                                    melhor do que estávamos à espera, foram dias bastante cansativos e trabalhosos, mas
-                                    também nos divertimos à brava, cada etapa concluída do nosso projeto deixava
-                                    sorrisos nas nossas caras, cada coffee break com a equipa dava uns belos minutos
-                                    de descontração para falarmos não entre nós (como equipa) como também para os nossos
-                                    colegas contra quem
-                                    estávamos a competir (foi sempre uma competição muito amigável)! <br>
-                                    Deixo os meus grandes parabéns à equipa que desenvolveu esta grande
-                                    aventura que ficará sempre
-                                    gravada nas nossas memórias. Não houve praticamente falhas nenhumas na
-                                    organização
-                                    do evento! Foi dos melhores projetos em que eu alguma vez aceitei
-                                    participar!<i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Pedro Rocha<br>
-                                    Vencedor da EBEC Aveiro 2017<br>
-                                    Modalidade: Team Design
-                                    <br><br><br>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Quote 3 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img class="img-circle img-testimonial" src="assets/img/testimonials/3.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> Da minha experiência da EBEC do ano passado só
-                                    tenho a dizer aspetos positivos, a logística do evento é muito interessante e
-                                    desafiadora, obrigando-nos a aprender sobre um determinado tema em pouco tempo, o
-                                    que nos faz desenvolver como alunos e futuros engenheiros.
-                                    <br>
-                                    Para concluir, a EBEC é um excelente concurso para quem gosta de
-                                    desafios e para por em prática o que vamos aprendendo.
-                                    <br>
-                                    Para concluir, a EBEC é um excelente concurso para quem gosta de
-                                    desafios e para por em prática o que vamos aprendendo.<i
-                                        class="fas fa-quote-right"></i>
-
-                                </p>
-                                <small class="text-orange">
-                                    Pedro Rolo<br>
-                                    Vencedor da EBEC Aveiro 2017<br>
-                                    Modalidade: Case Study
-                                    <br><br><br>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 4 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img class="img-circle img-testimonial" src="assets/img/testimonials/5.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i>A minha participação como júri na EBEC Aveiro tem
-                                    sido
-                                    um privilégio, enquanto docente universitária. Além da boa disposição sempre
-                                    presente,
-                                    tive o prazer de participar num evento bem organizado! Para além do rigor e empenho
-                                    exigidos e demonstrados na resolução de questões técnico-científicas, fiquei,
-                                    essencialmente,
-                                    agradada com a qualidade humana dos participantes e da organização.
-                                    <br>
-                                    Na EBEC Aveiro tem-se conseguido fomentar o gosto pela liderança, mas também pelo
-                                    espírito
-                                    de equipa e de entreajuda. Os desafios multidisciplinares são vencidos por todos, as
-                                    competências de cada participante sobressaem, permitindo criar valor acrescentado de
-                                    forma quase natural e descontraída!
-                                    <br>
-                                    Numa época onde se criticam tanto os métodos de ensino atualmente utilizados, é, sem
-                                    dúvida, uma lufada de ar fresco, conseguir perceber que algo se faz bem! Desejo,
-                                    sinceramente,
-                                    todo o sucesso para as edições futuras!<i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Professora Mónica Oliveira<br>
-                                    Departamento de Engenharia Mecânica<br>
-                                    Universidade de Aveiro
-                                    <br><br><br>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 5 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img class="img-circle img-testimonial" src="assets/img/testimonials/4.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> Na Universidade de Aveiro, as atividades do BEST
-                                    Aveiro, nomeadamente no contexto
-                                    das competições EBEC, têm sido claros exemplos de sucesso. Por um lado,
-                                    mobilizam
-                                    um número considerável de pessoas, entre participantes, colaboradores
-                                    diversos e
-                                    assistência. Por outro lado, apresentam-se como excelentes iniciativas
-                                    no âmbito
-                                    de ciências, tecnologia e engenharia. Os desafios propostos promovem um
-                                    evidente
-                                    crescimento dos envolvidos, em questões tão diversas quanto a aplicação
-                                    prática
-                                    de conhecimentos científicos ou a imaginação e criatividade exigidos.
-                                    <br>
-                                    Os participantes beneficiam ainda das exigências de um trabalho de
-                                    equipa com
-                                    objetivos bem definidos e um prazo muito apertado, assim como de um
-                                    contacto
-                                    direto com representantes de empresas e instituições de relevo.
-                                    <br>
-                                    Este é, aliás, um dos marcadores essenciais do mérito desta organização,
-                                    sempre
-                                    apoiada por diversas entidades que constatam o dinamismo e a qualidade
-                                    do BEST
-                                    Aveiro.<i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Professor João Oliveira<br>
-                                    Departamento de Engenharia Mecânica<br>
-                                    Universidade de Aveiro
-                                    <br><br><br>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a class="left carousel-control" data-slide="prev" href="#quote-carousel">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                    <a class="right carousel-control" data-slide="next" href="#quote-carousel">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-
-                </div>
+            <!-- Quote 1 -->
+            <div class="item active">
+                <img alt="oi" src="assets/img/testimonials/1.JPG">
             </div>
+
+            <!-- Quote 2 -->
+            <div class="item">
+                <img alt="oi" src="assets/img/testimonials/2.jpg">
+            </div>
+
+
+            <!-- Quote 3 -->
+            <div class="item container-fluid">
+                <img alt="oi" src="assets/img/testimonials/3.jpg">
+            </div>
+
+            <!-- Quote 4 -->
+            <div class="item container-fluid">
+                <img alt="oi" src="assets/img/testimonials/5.jpg">
+            </div>
+
+            <!-- Quote 5 -->
+            <div class="item container-fluid">
+                <img alt="oi" src="assets/img/testimonials/4.jpg">
+            </div>
+
+            <a class="left carousel-control" data-slide="prev" href="#quote-carousel">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#quote-carousel">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+
         </div>
     </div>
 </div>
@@ -1058,158 +807,6 @@
     </div>
 </div>
 
-<!-- Partners -->
-<div class="division-gray division-main container hidden" id="partners">
-    <!--Primeira Linha-->
-    <div class="row">
-        <br>
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Gold</h2>
-            <br>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <a href="http://voltalia.com/pt" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/gold/voltalia.png"
-                     style="max-height:120px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-lg-12 text-center">
-            <img class="img-responsive img-center" src="assets/img/logos/linha.png">
-        </div>
-    </div>
-    <br><br><br>
-    <!--Segunda Linha-->
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Silver</h2>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row">
-        <div class="col-lg-4">
-            <a href="http://www.btl.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/silver/btl.png"
-                     style="max-height:140px">
-            </a>
-        </div>
-        <div class="col-lg-4">
-            <a href="http://www.inova-ria.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/silver/geniuslogo.png"
-                     style="max-height:190px">
-            </a>
-        </div>
-        <div class="col-lg-4">
-            <a href="http://www.alticelabs.com/pt/index.html" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/silver/alticelabs.png"
-                     style="max-height:190px">
-            </a>
-        </div>
-        <div class="col-lg-6">
-            <a href="http://www.colep.com/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/silver/colep.png"
-                     style="max-height:190px">
-            </a>
-        </div>
-        <div class="col-lg-6">
-            <a href="https://blip.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/silver/blip.png"
-                     style="max-height:155px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row">
-        <div class="col-lg-12">
-            <img class="img-responsive img-center" src="assets/img/logos/linha.png">
-        </div>
-    </div>
-    <br><br><br>
-    <!--Terceira Linha-->
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Promo</h2>
-            <br>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-lg-3">
-            <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/bocadolobo.png"
-                 style="max-height: 45px">
-        </div>
-        <div class="col-lg-3">
-            <a href="https://www.tugabox.pt/?lang=pt-pt" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/tugabox.png"
-                     style="max-height:120px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://canyouescape.pt/pt/index.php/pt/homepage/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/CanYouEscape.png"
-                     style="max-height:120px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="https://www.facebook.com/Mirtiflor-745004355521875/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/mirtiflor.png"
-                     style="max-height:120px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="https://www.jugais.com/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/quintadejugais.png"
-                     style="max-height:130px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://nomini.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/nomini.png"
-                     style="max-height:135px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://vidaedu.com/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/vidaedu.png"
-                     style="max-height:75px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://www.royalschool.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/royalschool.png"
-                     style="max-height:100px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-md-2">
-            <a href="https://www.nestle-cereals.com/pt/pt/?gclid=CjwKCAjws6jVBRBZEiwAkIfZ2u3zj7FeQqJQHqiBYGFnsF3NI9e9-rXDlSVgVD2Z67gQi-QJAjqxERoCBxgQAvD_BwE"
-               target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/nestle.png"
-                     style="max-height:130px">
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="https://www.igus.pt/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/igus.bmp"
-                     style="max-height:95px">
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="http://www.pastelarialatina.com/" target="_blank">
-                <img class="img-responsive img-center" src="../../assets/img/partners/ebec/promo/latina.png"
-                     style="max-height:100px">
-            </a>
-        </div>
-    </div>
-</div>
-
 <div class="container division-blue division-main" id="parceria">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -1319,7 +916,7 @@
     </div>
     <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12">
-            <img class="img-responsive img-center" src="assets/img/logos/best-aveiro-color.png">
+            <img alt="oi" class="img-responsive img-center" src="assets/img/logos/best-aveiro-color.png">
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 text-white">
             <p class="text-justify">
@@ -1363,9 +960,9 @@
         <div class="col-lg-6 col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM
-                &origin=campus+universitario+santiago,aveiro
-                &destination=forum+aveiro,aveiro">
+                        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM
+                &center=40.629960,-8.659963
+                &zoom=19">
                 </iframe>
             </div>
         </div>

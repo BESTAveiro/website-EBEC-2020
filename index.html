@@ -15,7 +15,6 @@
     <!--Barra de navegacao-->
   <link href="assets/img/logos/roldana-laranja.png" rel="icon" type="imagem/x-icon">
     <title>EBEC Aveiro 2019</title>
-
     <!--Google Apis-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -46,6 +45,11 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
 </head>
 <body>
@@ -117,16 +121,30 @@
 <div class="container division-gray division-main entrada">
     <div class="row colunas"></div>
     <div class="row">
-        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+        <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10">
             <img alt="logo-EBEC" class="img-responsive" src="assets/img/logos/ebec-aveiro.png">
         </div>
     </div>
     <div class="row">
         <div>
-            <h1 class="text-center text-blue big-number">14, 15, 16, 17 e 20 de março</h1>
+            <h1 class="text-center text-blue big-number" style="font-size:40px">14, 15, 16, 17 e 20 de março
+                <br class="hidden-xs"> de 2019</h1>
         </div>
     </div>
     <div class="row colunas"></div>
+</div>
+
+<div class="jumbotron division-gray entrada hidden" style="margin-bottom:20px">
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8 col-sm-offset-1 col-sm-10">
+            <img alt="logo-EBEC" class="img-responsive" src="assets/img/logos/ebec-aveiro.png">
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <h1 class="text-center text-blue big-number" style="color:#294F66">14, 15, 16, 17 e 20 de março</h1>
+        </div>
+    </div>
 </div>
 
 
@@ -134,7 +152,7 @@
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">A EBEC Aveiro</h2>
+            <h2 class="section-heading text-orange">EBEC Aveiro</h2>
             <br>
         </div>
     </div>
@@ -145,45 +163,41 @@
     <input type="radio" id="tab4" name="tab-control">
 
     <!--    Mini-ícones-->
-    <ul>
-        <li>
+    <ul class="nav nav-justified">
+        <li class="active">
             <label for="tab1" role="button" class="text-center">
-                <i class="fas fa-map-pin"></i>
-                <br>
-                <span>Ronda Local</span>
+                <i class="fas fa-map-pin"></i><br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs">Ronda Local</span>
             </label>
         </li>
         <li>
             <label for="tab2" role="button" class="text-center">
-                <i class="fas fa-tools"></i>
-                <br>
-                <span>Modalidades</span>
+                <i class="fas fa-tools"></i><br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs">Modalidades</span>
             </label>
         </li>
         <li>
             <label for="tab3" role="button" class="text-center">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <br>
-                <span>Treinamento</span>
+                <i class="fas fa-chalkboard-teacher"></i><br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs">Formação</span>
             </label>
         </li>
         <li>
             <label for="tab4" role="button" class="text-center">
-                <i class="fas fa-briefcase"></i>
-                <br>
-                <span>Feira De Empresas</span>
+                <i class="fas fa-briefcase"></i><br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs">Feira de <br class="hidden-xs hidden-md hidden-lg">Empresas</span>
             </label>
         </li>
     </ul>
 
-    <div class="slider">
+    <div class="slider hidden-xs">
         <div class="indicator"></div>
     </div>
 
     <section class="content">
 
         <!-- EBEC Aveiro -->
-        <section class="division-blue container-fluid vertical-align seccao">
+        <section class="division-blue container-fluid vertical-align seccao tab-pane fade in active" id="rondalocal">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img alt="ebec-aveiro" class="img-responsive" src="assets/img/event/ebec-aveiro.png">
@@ -214,7 +228,7 @@
         </section>
 
         <!-- Modalidades -->
-        <section class="division-blue vertical-align container-fluid seccao">
+        <section class="division-blue vertical-align container-fluid seccao" id="modalidades">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-orange">Modalidades</h2>
@@ -251,7 +265,7 @@
 
 
         <!--BTD-->
-        <section class="division-blue container-fluid seccao">
+        <section class="division-blue container-fluid seccao" id="btd">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img alt="btd" class="img-responsive img-center" src="assets/img/logos/btd.png">
@@ -259,8 +273,7 @@
                 <div class="col-lg-7 col-md-7 col-sm-12">
                     <p class="text-justify text-white">
                         O BEST Aveiro volta a organizar mais uma edição dos <b class="text-orange">BEST
-                        Training Days</b>, desta vez inserido
-                        nas atividades da EBEC Aveiro 2019, onde terás a oportunidade de desenvolver as
+                        Training Days</b>, da EBEC Aveiro 2019, onde terás a oportunidade de desenvolver as
                         tuas capacidades numa formação.
                     </p>
                     <p class="text-justify text-white">
@@ -276,7 +289,7 @@
         </section>
 
         <!-- Feira de Empresas -->
-        <section class="container-fluid division-blue">
+        <section class="container-fluid division-blue" id="jobfair">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-orange">Feira de Empresas</h2>
@@ -321,59 +334,73 @@
         <div class="text-center col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
             <h4 class="service-heading text-blue" style="font-size: 24px;">14 Março</h4>
             <h5 class="text-blue" style="font-size:22px">Quinta</h5>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Complexo Pedagógico, Universidade de Aveiro">
                 <p style="font-size:18px">10:30 - 15:30</p>
                 <p style="font-size:15px;"><b>Feira de Empresas</b></p>
             </div>
-            <div style="vertical-align: middle">
+            <div data-toggle="tooltip" style="vertical-align: middle"
+                 title="Complexo Pedagógico, Universidade de Aveiro">
                 <p style="font-size:18px">16:00 - 16:30</p>
                 <p style="font-size:15px;"><b>Cocktail Network</b></p>
             </div>
         </div>
+        <br class="hidden-lg hidden-md hidden-sm">
         <div class="col-lg-2 col-md-2 col-sm-4">
             <h4 class="service-heading text-blue" style="font-size: 24px;">15 Março</h4>
             <h5 class="text-blue" style="font-size:22px">Sexta</h5>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">18:00 - 20:00</p>
                 <p style="font-size:15px;"><b>Best Training Days</b></p>
             </div>
         </div>
+        <br class="hidden-lg hidden-md hidden-sm">
         <div class="col-lg-2 col-md-2 col-sm-4">
             <h4 class="service-heading text-blue" style="font-size: 24px;">16 Março</h4>
             <h5 class="text-blue" style="font-size:22px">Sábado</h5>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">09:30 - 10:00</p>
                 <p style="font-size:15px;"><b>Check-in</b></p>
             </div>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">10:30 - 11:00</p>
                 <p style="font-size:15px;"><b>Opening Session</b></p>
             </div>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">12:30 - 13:30</p>
                 <p style="font-size:15px;"><b>Lunch</b></p>
             </div>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">14:00 - 00:00</p>
                 <p style="font-size:15px;"><b>Competition</b></p>
             </div>
         </div>
+        <br class="hidden-lg hidden-md hidden-sm">
         <div class="col-lg-2 col-md-2 col-sm-6">
             <h4 class="service-heading text-blue" style="font-size: 24px;">17 Março</h4>
             <h5 class="text-blue" style="font-size:22px">Domingo</h5>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">00:00 - 14:00</p>
                 <p style="font-size:15px;"><b>Competition</b></p>
             </div>
         </div>
+        <br class="hidden-lg hidden-md hidden-sm">
         <div class="col-lg-2 col-md-2 col-sm-6">
             <h4 class="service-heading text-blue" style="font-size: 24px;">20 Março</h4>
             <h5 class="text-blue" style="font-size:22px">Quarta</h5>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">13:30 - 17:30</p>
                 <p style="font-size:15px;"><b>Presentations*</b></p>
             </div>
-            <div style="vertical-align: middle">
+            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
+                 title="Local ainda a decidir">
                 <p style="font-size:18px">18:00 - 18:30</p>
                 <p style="font-size:15px;"><b>Closing Session*</b></p>
             </div>
@@ -395,9 +422,9 @@
     </div>
     <div class="row text-white">
         <div class="col-lg-5 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10 col-xs-12 text-center">
-            <img alt="logo-EBEC-pt" class="img-responsive img-center" src="assets/img/logos/ebec-pt-color.png">
+            <img alt="logo-EBEC-pt" class="img-responsive img-center" src="assets/img/logos/ebec-pt-white.png">
         </div>
-        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 textoEbecPt">
             <p class="text-justify">
                 <b>A EBEC Portugal é a final nacional da competição de Engenharia do BEST.</b>
             </p>
@@ -423,7 +450,9 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/osqsy-kDcU4" class="embed-responsive-item" allowfullscreen></iframe>
+                <iframe allowFullScreen
+                        class="embed-responsive-item"
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F"></iframe>
             </div>
         </div>
     </div>
@@ -431,7 +460,8 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/wPlLExjL_No" class="embed-responsive-item" allowfullscreen></iframe>
+                <iframe allowfullscreen class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/osqsy-kDcU4"></iframe>
             </div>
         </div>
     </div>
@@ -440,17 +470,16 @@
 <div class="container division-blue division-main" id="testemunhos">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange hidden-xs">Testemunhos</h2>
-            <h2 class="section-heading text-orange hidden-lg hidden-md hidden-sm">Teste-<br>munhos</h2>
+            <h2 class="section-heading text-orange">Teste<span class="hidden-lg hidden-md hidden-sm">-<br></span>munhos
+            </h2>
             <h3 class="section-subheading text-orange">Professores e Participantes</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel"
-                 style="padding-left:0;padding-right:0;">
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
                 <!-- Bottom Carousel Indicators -->
-                <ol class="carousel-indicators" style="margin-bottom:0;">
+                <ol class="carousel-indicators" style="position: relative; bottom:0">
                     <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#quote-carousel" data-slide-to="1" class=""></li>
                     <li data-target="#quote-carousel" data-slide-to="2" class=""></li>
@@ -466,42 +495,27 @@
                         <div class="row">
                             <div class="col-lg-offset-1 col-lg-2 text-center">
                                 <img alt="testimonial-1" class="img-circle img-testimonial"
-                                     src="assets/img/testimonials/1.jpg">
+                                     src="assets/img/testimonials/1.JPG">
                             </div>
                             <div class="col-lg-8">
                                 <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> Após ter sido participante da EBEC Aveiro 2016,
-                                    surgiu a oportunidade de ser Coordenador da EBEC Aveiro 2017. Desde então, passaram-se
-                                    6 meses em que todos os dias eram diferentes. Era necessário organizar-me diariamente,
-                                    para conseguir conciliar os estudos e o trabalho que tinha para a EBEC Aveiro, sem nunca
-                                    perder a motivação para nenhum destes aspetos.
+                                    <i class="fas fa-quote-left"></i>
+                                    “Ser-se Coordenador da EBEC, é não ter um dia normal!”, isto já é uma máxima de
+                                    todos
+                                    os coordenadores deste evento e eu não poderia concordar mais com ela.
                                     <br>
-                                    Nesta edição, contámos com a presença de um Main Sponsor do evento - a
-                                    Mahle;
-                                    reformulamos a modalidade de Case Study - fizemos 2 provas em 24h;
-                                    mantivemos a
-                                    existência de um workshop e de uma feira de empresas, desta vez com um
-                                    espaço de
-                                    Cocktail Network. A experiência tornou-se assim enriquecedora - criar e
-                                    coordenar
-                                    uma equipa, manter todos motivados, encontrar e resolver problemas que
-                                    apareciam
-                                    todas as semanas - pode parecer duro (e é) mas, na verdade, hoje sou
-                                    facilmente
-                                    capaz de dizer que valeu a pena por todas as aprendizagens que eu e a
-                                    minha
-                                    equipa trouxemos para nós, como estudantes, como futuros trabalhadores e
-                                    também
-                                    como pessoas. <br>
-                                    Por último, gostaria de deixar um apelo a todos: explorem áreas de
-                                    conhecimento que
-                                    não conhecem, saiam da vossa zona de conforto e agarrem as oportunidades
-                                    que aparecem.<i class="fas fa-quote-right"></i>
+                                    É fascinante poder coordenar uma equipa durante 6 meses com o intuito de organizar
+                                    mais
+                                    uma edição de um evento que já conta com uma década de existência.
+                                    <br>
+                                    O peso da responsabilidade é sem dúvida enorme, mas tudo compensa no momento em que,
+                                    chegado ao dia do evento, vemos o empenho e a paixão com que os participantes aderem
+                                    e se envolvem neste projeto.
+                                    <i class="fas fa-quote-right"></i>
                                 </p>
                                 <small class="text-orange">
-                                    Pedro Reis<br>
-                                    Coordenador da EBEC Aveiro 2017
-                                    <br><br><br>
+                                    João Valente<br>
+                                    Coordenador da EBEC Challenge Aveiro 2018
                                 </small>
                             </div>
                         </div>
@@ -539,7 +553,6 @@
                                     Pedro Rocha<br>
                                     Vencedor da EBEC Aveiro 2017<br>
                                     Modalidade: Team Design
-                                    <br><br><br>
                                 </small>
                             </div>
                         </div>
@@ -571,7 +584,6 @@
                                     Pedro Rolo<br>
                                     Vencedor da EBEC Aveiro 2017<br>
                                     Modalidade: Case Study
-                                    <br><br><br>
                                 </small>
                             </div>
                         </div>
@@ -608,7 +620,6 @@
                                     Professora Mónica Oliveira<br>
                                     Departamento de Engenharia Mecânica<br>
                                     Universidade de Aveiro
-                                    <br><br><br>
                                 </small>
                             </div>
                         </div>
@@ -653,7 +664,6 @@
                                     Professor João Oliveira<br>
                                     Departamento de Engenharia Mecânica<br>
                                     Universidade de Aveiro
-                                    <br><br><br>
                                 </small>
                             </div>
                         </div>
@@ -717,6 +727,60 @@
     </div>
 </div>
 
+<div class="container division-gray division-main hidden" id="juri">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-blue">Júri</h2>
+            <h3 class="section-subheading text-blue">Quem irá julgar as provas</h3>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center"><h3 class="text-blue" style="font-weight: bold;font-size: 25px;">CASE
+            STUDY</h3></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img alt="juri" class="img-responsive img-thumbnail img-jury" src="assets/img/team/empty.png">
+                <h4 class="text-blue">Júri 1</h4>
+                <h5>email</h5>
+                <p>departamento</p>
+                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
+                <h4 class="text-blue">Júri 2</h4>
+                <h5>email</h5>
+                <p>departamento</p>
+                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center"><h3 class="text-blue" style="font-weight: bold;font-size: 25px;">TEAM
+            DESIGN</h3></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
+                <h4 class="text-blue">Júri 3</h4>
+                <h5>email</h5>
+                <p>departamento</p>
+                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="team-member">
+                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
+                <h4 class="text-blue">Júri 4</h4>
+                <h5>email</h5>
+                <p>departamento</p>
+                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container division-blue division-main" id="faqs">
     <div class="row">
@@ -727,7 +791,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="panel-group" id="accordion">
+            <div class="panel-group  col-lg-12" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title text-no-transform text-blue">
@@ -1157,15 +1221,18 @@
                 network.
             </p>
             <p class="text-justify">
-                • Marque presença numa feira de empresas e exponha a sua empresa, produtos e projetos. Terá a oportunidade
+                <span class="big-number text-orange">•</span> Marque presença numa feira de empresas e exponha a sua
+                empresa, produtos e projetos. Terá a oportunidade
                 de trocar experiências com os estudantes num ambiente informal.
             </p>
             <p class="text-justify">
-                • Beneficie do acesso aos currículos disponibilizados, de forma opcional, pelos participantes do evento e
+                <span class="big-number text-orange">•</span> Beneficie do acesso aos currículos disponibilizados, de
+                forma opcional, pelos participantes do evento e
                 estudantes da Universidade de Aveiro presentes na sessão de encerramento.
             </p>
             <p class="text-justify">
-                • Direito a trabalhar em sintonia com o Topic Group podendo propor provas, tanto de Case Study como de
+                <span class="big-number text-orange">•</span> Direito a trabalhar em sintonia com o Topic Group podendo
+                propor provas, tanto de Case Study como de
                 Team Design, que serão realizadas pelos participantes.
             </p>
             <p class="text-justify">
@@ -1178,8 +1245,10 @@
                 seu dinamismo, inovação e empreendedorismo, através de promoção disponibilizada pelo BEST Aveiro.
             </p>
             <p class="text-justify">
-                Caso esteja interessado em ser nosso parceiro, contacte-nos por meio <a class="text-orange" href="#contactos">
-                daqui</a> ou <a href="#info" class="text-orange">daqui</a>.
+                Caso esteja interessado em ser nosso parceiro, contacte-nos por meio dos<a class="text-orange"
+                                                                                           href="#contactos">
+                Contactos</a> da equipa ou por meio das <a class="text-orange" href="#info">Informações</a> do Best
+                Aveiro.
             </p>
         </div>
     </div>
@@ -1247,7 +1316,7 @@
     </div>
     <div class="row">
         <div class="col-lg-5 col-lg-offset-0 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-            <img alt="logo-BEST" class="img-responsive img-center" src="assets/img/logos/best-aveiro-color.png">
+            <img alt="logo-BEST" class="img-responsive img-center" src="assets/img/logos/best-aveiro-white.png">
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12 text-white">
             <p class="text-justify">
@@ -1273,15 +1342,15 @@
 <div class="division-gray division-main container" id="info">
     <div class="row">
         <div class="col-lg-12 text-center text-white">
-            <h2 class="section-heading text-blue hidden-xs">Informações</h2>
-            <h2 class="section-heading text-blue hidden-lg hidden-md hidden-sm">Infor-<br>mações</h2>
+            <h2 class="section-heading text-blue">Infor<span class="hidden-lg hidden-md hidden-sm">-<br></span>mações
+            </h2>
             <br/>
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-offset-1 col-sm-10">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="embed-responsive embed-responsive-16by9 division-rounded">
                 <iframe class="embed-responsive-item"
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q=BEST Aveiro, Aveiro, PT">
                 </iframe>
@@ -1298,7 +1367,7 @@
             </p>
             <h4  class="text-blue"><i class="fa fa-phone"></i> Telefone</h4>
             <p class="text-black">
-                +351 925 030 168
+                +351 917 077 329
             </p>
             <h4  class="text-blue"><i class="fa fa-envelope"></i> Email</h4>
             <p class="text-white">
@@ -1358,7 +1427,7 @@
         <div class="col-lg-offset-4 col-lg-2 col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-4 col-xs-6">
             <a target="_blank" href="https://www.ua.pt/">
                 <img class="img-responsive img-grayscale img-footer-2 img-center hidden-xs" alt="Universidade de Aveiro"
-                     src="assets/img/partners/annual/ua.png">
+                     src="assets/img/partners/annual/ua-3.png">
                 <img class="img-responsive img-grayscale img-footer-3 img-center hidden-lg hidden-md hidden-sm"
                      alt="Universidade de Aveiro" src="assets/img/partners/annual/ua-2.gif">
             </a>
