@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69361acb-f31d-4578-ba4d-4cc2c15650b7" name="Default Changelist" comment="">
+    <list default="true" id="69361acb-f31d-4578-ba4d-4cc2c15650b7" name="Default Changelist" comment="final - 6">
+      <change afterPath="$PROJECT_DIR$/assets/Regulamento.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/valente.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/regulation/Regulamento.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-en.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -28,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="720" column="108" selection-start-line="720" selection-start-column="108" selection-end-line="720" selection-end-column="108" />
+            <state relative-caret-position="298">
+              <caret line="701" column="49" selection-start-line="701" selection-start-column="49" selection-end-line="701" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index-en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="709" column="89" selection-start-line="709" selection-start-column="89" selection-end-line="709" selection-end-column="89" />
+            <state relative-caret-position="155">
+              <caret line="700" column="51" selection-start-line="700" selection-start-column="51" selection-end-line="700" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -118,8 +121,8 @@
         <option value="$PROJECT_DIR$/assets/knockout-3.5.0.js" />
         <option value="$PROJECT_DIR$/index2.html" />
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/index-en.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index-en.html" />
       </list>
     </option>
   </component>
@@ -185,6 +188,13 @@
               <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="team" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
               <item name="testimonials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -207,19 +217,19 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/BESTAveiro/ebec-challenge-2018.git" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\team" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\regulation" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\views" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\assets" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\team" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\css" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners\annual" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -262,7 +272,7 @@
       <workItem from="1550336129995" duration="9997000" />
       <workItem from="1550435259970" duration="3014000" />
       <workItem from="1550601494602" duration="577000" />
-      <workItem from="1550824097834" duration="4002000" />
+      <workItem from="1550824097834" duration="5804000" />
     </task>
     <task id="LOCAL-00001" summary="Maybe Final">
       <created>1545264257202</created>
@@ -397,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550844913379</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="final - 6">
+      <created>1551017180090</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1551017180091</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318305000" />
+    <option name="totallyTimeSpent" value="320107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -476,7 +493,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/img/event/best_aveiro_1.jpg" />
     <entry file="file://$PROJECT_DIR$/assets/img/event/ebec.jpg" />
     <entry file="file://$PROJECT_DIR$/assets/full-width-slider/with-jquery.html" />
     <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
@@ -631,30 +647,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/testimonials/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/testimonials/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/testimonials/3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="709" column="89" selection-start-line="709" selection-start-column="89" selection-end-line="709" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/assets/img/testimonials/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/team/valente.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="720" column="108" selection-start-line="720" selection-start-column="108" selection-end-line="720" selection-end-column="108" />
+        <state relative-caret-position="298">
+          <caret line="701" column="49" selection-start-line="701" selection-start-column="49" selection-end-line="701" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -670,6 +678,17 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="700" column="51" selection-start-line="700" selection-start-column="51" selection-end-line="700" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
