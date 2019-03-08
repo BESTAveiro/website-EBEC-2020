@@ -222,7 +222,6 @@
 .navbar .nav > li a:hover {color:#91C044}
 
 .navbar-brand {
-  font-size: 18px;
   height: 1px;
   line-height: 2px;
   padding: 2px;
@@ -232,13 +231,19 @@
   text-align: center;
 }
 
-.nav-logo{
-  height:50px;
+.nav-logo-1{
+  height:56px;
 }
 
+.nav-logo-2{
+  height:60px;
+}
 @media (max-width: 768px){
-  .nav-logo{
-    height:45px;
+  .nav-logo-1{
+    height:46px;
+  }
+  .nav-logo-2{
+    height:50px;
   }
 }
 
@@ -247,6 +252,12 @@
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  background-color: transparent;
+  color:#91C044;
+}
+
+.navbar-default .navbar-nav .open .dropdown > a:hover,
+.navbar-default .navbar-nav .open .dropdown > a:focus{
   background-color: transparent;
   color:#91C044;
 }
@@ -264,6 +275,7 @@
   color:#91C044;
   background-color: transparent;
 }
+
 
 /*carousel*/
 #quote-carousel .carousel-control {
@@ -426,7 +438,6 @@
   width:230px;
   height:230px;
   margin: 0 auto;
-  border: 6px solid #294F66;
 }
 
 .img-jury {
@@ -595,6 +606,21 @@ footer{
   color:#91C044;
 }
 
+.text-blue-light{
+  color: #428BFF;
+}
+
+
 .jumbotron {
   background-color: rgba(200, 200, 200, 0.9);
 }
+
+#juri a i{
+  padding-top: 10px;
+}
+
+#parceria p{
+  font-weight: bold;
+}
+
+
