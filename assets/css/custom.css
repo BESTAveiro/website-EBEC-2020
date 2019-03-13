@@ -441,8 +441,8 @@
 }
 
 .img-jury {
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
 }
 
@@ -468,6 +468,12 @@
 .img-center {
   margin: 0 auto;
   vertical-align: middle;
+}
+.img-center-2 {
+  margin: auto;
+}
+.bordered{
+  border:red solid 1px;
 }
 
 h2.section-heading {
@@ -617,10 +623,6 @@ footer{
 
 #juri a i{
   padding-top: 10px;
-}
-
-#parceria p{
-  font-weight: bold;
 }
 
 
