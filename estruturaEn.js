@@ -18,6 +18,7 @@ $(document).ready(function () {
 
         },
         entrada: {
+            logo: "assets/img/logos/ebec-aveiro.png",
             title: "March<br> 14th, 15th, 16th, 17th and 20th"
         },
         ebecAveiro: {
@@ -42,7 +43,8 @@ $(document).ready(function () {
                         "will promote, apart from the competition a cocktail network, on March 14th.",
                         "By any doubt, you can check the FAQ section or contact us by our team or by our information section."
                     ],
-                    subscribe: "Subscribe now!"
+                    subscribe: "Subscribe now!",
+                    img: "assets/img/event/ebec-aveiro.png"
                 },
                 seccao2: {
                     title: "Modalities",
@@ -379,6 +381,7 @@ $(document).ready(function () {
             ]
         },
         bestAveiro: {
+            img: "assets/img/logos/best-aveiro-color.png",
             sectionHeading: "About the BEST Aveiro",
             corpo: [
                 "Founded oficially in 2010, the Local Group Best Aveiro, hosted in University of Aveiro, counts with 45 " +

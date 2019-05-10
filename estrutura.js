@@ -18,6 +18,7 @@ $(document).ready(function () {
 
         },
         entrada: {
+            logo: "assets/img/logos/ebec-aveiro.png",
             title: "14, 15, 16, 17 e 20 de março<br class='hidden-xs'> de 2019"
         },
         ebecAveiro: {
@@ -43,7 +44,8 @@ $(document).ready(function () {
                         "Para qualquer dúvida, podes-se informar na secção FAQ ou nos contactar por meio da nossa equipa" +
                         "ou por meios da secção de informações."
                     ],
-                    subscribe: "Inscreve-te já!"
+                    subscribe: "Inscreve-te já!",
+                    img: "assets/img/event/ebec-aveiro.png"
                 },
                 seccao2: {
                     title: "Modalidades",
@@ -393,6 +395,7 @@ $(document).ready(function () {
             ]
         },
         bestAveiro: {
+            img: "assets/img/logos/best-aveiro-color.png",
             sectionHeading: "Sobre o BEST Aveiro",
             corpo: [
                 "Fundado oficialmente em 2010, o Grupo Local BEST Aveiro, sediado na Universidade de Aveiro, conta com " +
