@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
-    <!--oi-->
     <!--Links meta-->
-    <!--oimana-->
     <meta charset="utf-8" content="text/html" http-equiv="Content-Type">
-    <meta content="width=device-width, initial-scale=1.0," name="viewport">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="Website of EBEC Aveiro 2017 - A students engineering competition organized by BEST Aveiro."
-          name="description">
-    <meta content="EBEC" name="keywords">
-    <meta content="ITBugs" name="author">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
     <!--Barra de navegacao-->
@@ -31,18 +24,18 @@
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!--Links Form-validation-->
-    <link href="assets/form-validation/css/formValidation.min.css" rel="stylesheet">
-    <script src="assets/form-validation/js/formValidation.min.js" type="text/javascript"></script>
-    <script src="assets/form-validation/js/framework/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://knockoutjs.com/downloads/knockout-3.5.0.js"></script>
+    <script src="estruturaEn.js" type="text/javascript"></script>
 
 
     <link href="assets/css/custom.css" rel="stylesheet">
-    <script src="assets/js/custom.js" type="text/javascript"></script>
 
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" rel="stylesheet">
@@ -53,8 +46,8 @@
     </script>
 
 </head>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top division-blue" style="border:none;">
+<body data-bind="with: corpo">
+<nav class="navbar navbar-default navbar-fixed-top division-blue" data-bind="using: navbar" style="border:none;">
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target="#myNavbar" data-toggle="collapse" type="button">
@@ -63,55 +56,28 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img alt="roldana-EBEC" class="nav-logo" src="assets/img/logos/roldana-branca.png">
+                <img alt="roldana-EBEC" class="nav-logo-1" src="assets/img/logos/roldana-branca.png">
             </a>
         </div>
-
         <div class="navbar-right hidden-xs">
             <a href="http://bestaveiro.web.ua.pt/" target="_blank">
-                <img alt="logo-BEST" class="nav-logo" src="assets/img/logos/best-aveiro-white.png">
+                <img alt="logo-BEST" class="nav-logo-2" src="assets/img/logos/best-aveiro-white.png">
             </a>
         </div>
-
-
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav specialButton">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About EBEC
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#ebec">The EBEC Aveiro</a></li>
-                        <li><a href="#ebecPT">EBEC Portugal</a></li>
-                        <li><a href="#programa">Program</a></li>
-                        <li><a href="#ebecAnt">Preview Editions</a></li>
-                        <li><a href="#testemunhos">Testimonials</a></li>
-                    </ul>
-                </li>
+                <!--ko foreach: dropdowns-->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        More about the EBEC<span class="caret"></span>
+                        <span data-bind="text: title"></span>
+                        <span class='caret'></span>
                     </a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#apply">Subscribe</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#equipa">The Team</a></li>
-                        <li><a href="#parceria">Become a Partner</a></li>
-                        <li><a href="#contactos">Contacts</a></li>
-                        <li><a class="hidden" href="#partners">Partners</a></li>
+                    <ul class="dropdown-menu division-blue" data-bind="foreach: menu">
+                        <li><a data-bind="text: $data" href="#ebec"></a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        The Organization<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu division-blue">
-                        <li><a href="#best">About the BEST Aveiro</a></li>
-                        <li><a href="#info">Information</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="index.html">PT</a>
-                </li>
+                <!--/ko-->
+                <li><a data-bind="text: lingua, attr: {href: page}"></a></li>
             </ul>
         </div>
     </div>
@@ -119,7 +85,7 @@
 
 
 <!--entrada-->
-<div class="container division-gray division-main entrada">
+<div class="container division-gray division-main entrada" data-bind="using: entrada">
     <div class="row colunas"></div>
     <div class="row">
         <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10">
@@ -128,52 +94,33 @@
     </div>
     <div class="row">
         <div>
-            <h1 class="text-center text-blue big-number" style="font-size:30px">March<br> 14th, 15th, 16th, 17th and
-                20th
-            </h1>
+            <h1 class="text-center text-blue big-number" data-bind="html: title" style="font-size:40px"></h1>
         </div>
     </div>
     <div class="row colunas"></div>
 </div>
 
-<div class="tabs division-blue division-main container" id="ebec">
+
+<div class="tabs division-blue division-main container" data-bind="with: ebecAveiro" id="ebec">
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">EBEC Aveiro</h2>
+            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
             <br>
         </div>
     </div>
 
-    <input checked="" id="tab1" name="tab-control" type="radio">
+    <input checked="" id="tab0" name="tab-control" type="radio">
+    <input id="tab1" name="tab-control" type="radio">
     <input id="tab2" name="tab-control" type="radio">
     <input id="tab3" name="tab-control" type="radio">
-    <input id="tab4" name="tab-control" type="radio">
 
-    <!--    Mini-ícones-->
-    <ul class="nav nav-justified">
-        <li class="active">
-            <label class="text-center" for="tab1" role="button">
-                <i class="fas fa-map-pin"></i><br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs">Local Round</span>
-            </label>
-        </li>
-        <li>
-            <label class="text-center" for="tab2" role="button">
-                <i class="fas fa-tools"></i><br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs">Modalities</span>
-            </label>
-        </li>
-        <li>
-            <label class="text-center" for="tab3" role="button">
-                <i class="fas fa-chalkboard-teacher"></i><br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs">Formation</span>
-            </label>
-        </li>
-        <li>
-            <label class="text-center" for="tab4" role="button">
-                <i class="fas fa-briefcase"></i><br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs">Job<br class="hidden-xs hidden-md hidden-lg"> Fair</span>
+    <ul class="nav nav-justified" data-bind="foreach: icones">
+        <li class="" data-bind="css: {active: $index() == 0}">
+            <label class="text-center" data-bind="attr: {for: 'tab' + $index()}" role="button">
+                <i class="fas" data-bind="class: classe"></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title"></span>
             </label>
         </li>
     </ul>
@@ -182,139 +129,59 @@
         <div class="indicator"></div>
     </div>
 
-    <section class="content">
+    <section class="content" data-bind="with: seccoes">
 
-        <!-- EBEC Aveiro -->
-        <section class="division-blue container-fluid vertical-align seccao tab-pane fade in active" id="rondalocal">
+        <section class="division-blue container-fluid vertical-align seccao tab-pane fade in active"
+                 data-bind="with: seccao1" id="rondalocal">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img alt="ebec-aveiro" class="img-responsive" src="assets/img/event/ebec-aveiro.png">
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <p class="text-justify text-white">
-                        <b style="color:orange">BEST Aveiro</b> has the pleasure to announce the EBEC Aveiro 2019, one
-                        of the 88 local
-                        stages of the EBEC project, with the duration of 24 hours.
-                    </p>
-                    <p class="text-justify text-white">
-                        With the 9th edition happening at <b style="color:orange">March of 2019</b>, the event has been
-                        counting with
-                        a bigger number of participants each year. Considered one of the most outstanding events of BEST
-                        Aveiro,
-                        conceptualized with an eye at the students of the University of Aveiro, EBEC Aveiro aims to be a
-                        moment where creativity, challenge, energy, flexibility and team spirit are put into practice.
-                    </p>
-                    <p class="text-justify text-white">
-                        In order to promote a better relationship between students and companies, the EBEC Aveiro
-                        organization
-                        will promote, apart from the competition, a <span style="color:orange">job fair</span> followed
-                        by a cocktail network,
-                        on March 14th.
-                    </p>
-                    <p class="text-justify text-white">
-                        By any doubt, you can check the FAQ section or contact us by our team or by our information
-                        section.
-                    </p>
-
+                <div class="col-md-7 col-sm-12">
+                    <div data-bind="foreach: ps">
+                        <p class="text-justify text-white" data-bind="html: $data"></p>
+                    </div>
                     <div class="col-lg-12 text-center">
                         <a class="specialButton button division-orange" href="#apply">
-                            Subscribe now!<span class="fa fa-chevron-right"></span>
+                            <span data-bind="text: subscribe"></span><span class="fa fa-chevron-right"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Modalidades -->
-        <section class="division-blue vertical-align container-fluid seccao" id="modalidades">
+        <section class="division-blue vertical-align container-fluid seccao" data-bind="with: seccao2" id="modalidades">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-orange">Modalities</h2>
+                    <h2 class="text-orange" data-bind="text: title"></h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="col-lg-6">
-                        <h3 class="text-orange text-center">
-                            Case Study
-                        </h3>
-                        <p class="text-justify text-white">
-                            Participants will have the opportunity to resolve two case studies provided by companies,
-                            which should consist in a problem that may arise from the company's need to innovate or
-                            optimize processes. Each of the case studies should be prepared to take up to 12 hours
-                            to solve, being delivered to the participants at the beginning of the competition.
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div>
-                            <h3 class="text-orange text-center">
-                                Team Design
-                            </h3>
-                            <p class="text-justify text-white">
-                                Participants will have the opportunity to build a prototype that solves a challenge
-                                posed by a company with access to limited resources. The prototypes will then be
-                                evaluated by a jury based on parameters previously defined by the organization.
-                            </p>
-                        </div>
-                    </div>
+            <div class="row" data-bind="foreach: modalidades">
+                <div class="col-lg-6">
+                    <h3 class="text-orange text-center" data-bind="text: title"></h3>
+                    <p class="text-justify text-white" data-bind="text: corpo"></p>
                 </div>
             </div>
         </section>
 
-
-        <!--BTD-->
         <section class="division-blue container-fluid seccao" id="btd">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
                     <img alt="btd" class="img-responsive img-center" src="assets/img/logos/btd.png">
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-12">
-                    <p class="text-justify text-white">
-                        The BEST Aveiro will organize again one more edition of the <b class="text-orange">BEST Training
-                        Days</b>, from EBEC Aveiro 2019, where you will have the opportunity to develop your abilities
-                        in
-                        a formation
-                    </p>
-                    <p class="text-justify text-white">
-                        The formation will occur during the afternoon of <b class="text-orange">March 15th</b> and it is
-                        restricted to the participants.
-                    </p>
-                    <p class="text-justify text-white">
-                        All participants on the formation will receive a participation certificate.
-                    </p>
+                <div class="col-md-7 text-justify text-white" data-bind="foreach: seccao3">
+                    <p class="" data-bind="html: $data"></p>
                 </div>
             </div>
         </section>
 
-        <!-- Feira de Empresas -->
         <section class="container-fluid division-blue" id="jobfair">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="text-orange">Job Fair</h2>
+            <div class="row text-white">
+                <div class="col-lg-5 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10 text-center">
+                    <img alt="ebecPT" class="img-responsive img-center" src="assets/img/logos/ebec-pt-white.png">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
-                    <img alt="ebec-aveiro-2" class="img-responsive" src="assets/img/event/job-fair.png">
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-12">
-
-                    <p class="text-white text-justify">
-                        Encompassed in EBEC Challenge Aveiro 2018 will be held a Company Fair, on
-                        <b class="text-orange">March 14th</b>, at the<b class="text-orange">University of Aveiro</b>,
-                        for all academic public.
-                    </p>
-                    <p class="text-white text-justify">
-                        It will be a space where companies from different sectors will take place and will a close
-                        contact between companies and the academic community. The students will have the opportunity to
-                        know the activity of the present entities and interact with them. and there will also be a space
-                        dedicated to interviews made by the companies.
-                    </p>
-                    <p class="text-white text-justify">
-                        After, it is going to happen a <b class="text-orange">Cocktail Network</b>, which will give the
-                        oportunity of a share of experiences and methods between students, companies and the University
-                        of Aveiro in a more informal environment.
-                    </p>
+                <div class="col-lg-7 col-md-8 text-justify textoEbecPt" data-bind="foreach: seccao4">
+                    <p data-bind="html: $data"></p>
                 </div>
             </div>
         </section>
@@ -322,355 +189,102 @@
     </section>
 </div>
 
-<section class="division-gray container division-main" id="ebecPT">
+<section class="division-main division-gray container" data-bind="with: edicoesAnteriores" id="ebecAnt">
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="section-heading text-blue text-center">EBEC Portugal</h2>
+            <h2 class="text-center section-heading text-blue" data-bind="html: sectionHeading"></h2>
         </div>
     </div>
-    <div class="row text-black">
-        <div class="col-lg-5 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-10 col-xs-12 text-center">
-            <img alt="logo-EBEC-pt" class="img-responsive img-center" src="assets/img/logos/ebec-pt-color.png">
+    <div data-bind="foreach: videos">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe allowFullScreen class="embed-responsive-item" data-bind="attr: {src: $data}"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 textoEbecPt">
-            <p class="text-justify">
-                <b>The EBEC Portugal is the national final competition of engineering of BEST.</b>
-            </p>
-            <p class="text-justify">
-                <b>The EBEC Challenge Portugal is a National Final organized by 5 Local Groups of BEST from north to
-                    south
-                    of the country, where the winners of the local rounds competitions will compete against each
-                    other.</b>
-            </p>
-            <p class="text-justify">
-                <b>For more informations, visit the <a class="text-blue" href="http://ebecportugal.pt/"
-                                                       target="_blank">site</a>.</b>
-            </p>
-        </div>
+        <span data-bind="if: $index() == 0"><br></span>
     </div>
 </section>
 
 
-<section class="container division-blue division-main" id="programa">
+<section class="container division-blue division-main" data-bind="with: programa" id="programa">
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="section-heading text-orange text-center">Program</h2>
+            <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
         </div>
     </div>
-    <div class="row text-center text-white">
-
-        <div class="text-center col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
-            <h4 class="service-heading text-orange" style="font-size: 24px;">March 14th</h4>
-            <h5 class="text-orange" style="font-size:22px">Thursday</h5>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Complexo Pedagógico, University of Aveiro">
-                <p style="font-size:18px">10:30 - 16:00</p>
-                <p style="font-size:15px;"><b>Job Fair</b></p>
-            </div>
-            <div data-toggle="tooltip" style="vertical-align: middle"
-                 title="Complexo Pedagógico, University of Aveiro">
-                <p style="font-size:18px">16:00 - 17:00</p>
-                <p style="font-size:15px;"><b>Cocktail Network</b></p>
+    <div class="row text-center text-white" data-bind="foreach: schedule">
+        <div class="text-center col-md-2 col-sm-4"
+             data-bind="css: {'col-md-offset-1': $index() == 0,
+             'col-sm-6': ($index() == 3 || $index() == 4),
+             'col-sm-4': ($index() != 3 && $index() != 4)}">
+            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+            <div data-bind="foreach: eventos">
+                <div data-bind="attr: {title: local}" data-toggle="tooltip" style="vertical-align: middle">
+                    <p data-bind="text: hora" style="font-size:18px"></p>
+                    <p style="font-size:15px;"><b data-bind="text: nome"></b></p>
+                </div>
             </div>
         </div>
-
-        <br class="hidden-lg hidden-md hidden-sm">
-        <div class="col-lg-2 col-md-2 col-sm-4">
-            <h4 class="service-heading text-orange" style="font-size: 24px;">March 15th</h4>
-            <h5 class="text-orange" style="font-size:22px">Friday</h5>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">18:00 - 20:00</p>
-                <p style="font-size:15px;"><b>Best Training Days</b></p>
-            </div>
-        </div>
-
-        <br class="hidden-lg hidden-md hidden-sm">
-        <div class="col-lg-2 col-md-2 col-sm-4">
-            <h4 class="service-heading text-orange" style="font-size: 24px;">March 16th</h4>
-            <h5 class="text-orange" style="font-size:22px">Saturday</h5>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">09:30 - 10:30</p>
-                <p style="font-size:15px;"><b>Check-in</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">10:30 - 11:30</p>
-                <p style="font-size:15px;"><b>Opening Session</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">11:30 - 12:30</p>
-                <p style="font-size:15px;"><b>Companies Presentations</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">12:30 - 13:00</p>
-                <p style="font-size:15px;"><b>Picture</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">13:00 - 14:30</p>
-                <p style="font-size:15px;"><b>Lunch</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">14:30 - 00:00</p>
-                <p style="font-size:15px;"><b>Competition</b></p>
-            </div>
-        </div>
-
-        <br class="hidden-lg hidden-md hidden-sm">
-        <div class="col-lg-2 col-md-2 col-sm-6">
-            <h4 class="service-heading text-orange" style="font-size: 24px;">March 17th</h4>
-            <h5 class="text-orange" style="font-size:22px">Sunday</h5>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">00:00 - 14:30</p>
-                <p style="font-size:15px;"><b>Competition</b></p>
-            </div>
-        </div>
-
-        <br class="hidden-lg hidden-md hidden-sm">
-        <div class="col-lg-2 col-md-2 col-sm-6">
-            <h4 class="service-heading text-orange" style="font-size: 24px;">March 20th</h4>
-            <h5 class="text-orange" style="font-size:22px">Wednesday</h5>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">13:30 - 18:00</p>
-                <p style="font-size:15px;"><b>Presentations</b></p>
-            </div>
-            <div data-placement="auto bottom" data-toggle="tooltip" style="vertical-align: middle"
-                 title="Place not decided yet">
-                <p style="font-size:18px">18:00 - 19:00</p>
-                <p style="font-size:15px;"><b>Closing Session</b></p>
-            </div>
-        </div>
+        <span data-bind="if: $index() != 4"><br class="hidden-lg hidden-md hidden-sm"></span>
     </div>
 </section>
 
-
-<!-- EBEC Portugal -->
-
-
-<section class="division-main division-gray container" id="ebecAnt">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="text-center section-heading text-blue"><b>Preview Editions</b></h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe allowFullScreen
-                        class="embed-responsive-item"
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F"></iframe>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe allowfullscreen class="embed-responsive-item"
-                        src="https://www.youtube.com/embed/osqsy-kDcU4"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="container division-blue division-main" id="testemunhos">
+<div class="division-main division-gray container" data-bind="with: apply" id="apply">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">Testi<span class="hidden-lg hidden-md hidden-sm">-<br></span>monials
-            </h2>
-            <h3 class="section-subheading text-orange">Professors and Participants</h3>
+            <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
+            <h3 class="section-subheading text-blue" data-bind="text: sectionSubheading"></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12" data-bind="foreach: corpo">
+            <p class="text-black">
+                <span class="big-number text-blue"><span data-bind="text: $index() + 1"></span>.</span>
+                <b data-bind="html: $data"></b>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container division-blue division-main" data-bind="with: testimonials" id="testemunhos">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange" data-bind="html: sectionHeading"></h2>
+            <h3 class="section-subheading text-orange" data-bind="text: sectionSubheading"></h3>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12">
             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                <!-- Bottom Carousel Indicators -->
-                <ol class="carousel-indicators" style="position: relative; bottom:0">
-                    <li class="active" data-slide-to="0" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="1" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="2" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="3" data-target="#quote-carousel"></li>
-                    <li class="" data-slide-to="4" data-target="#quote-carousel"></li>
+
+                <ol class="carousel-indicators" data-bind="foreach: testemunhos" style="position: relative; bottom:0">
+                    <li data-bind="css: {active: $index() == 0}" data-slide-to="0" data-target="#quote-carousel"></li>
                 </ol>
 
-                <!-- Carousel Slides / Quotes -->
                 <div class="carousel-inner">
 
-                    <!-- Quote 1 -->
-                    <div class="item container-fluid active">
+                    <!-- ko foreach: testemunhos-->
+                    <div class="item container-fluid active" data-bind="css: {active: $index() == 0}">
                         <div class="row">
                             <div class="col-lg-offset-1 col-lg-2 text-center">
                                 <img alt="testimonial-1" class="img-circle img-testimonial"
-                                     src="assets/img/team/valente.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> 'Being EBEC's coordinator, is not having a normal
-                                    day!', that is already a maximum to everyone of all the coordinators of this event
-                                    and
-                                    I couldn't agree more with that.
-                                    <br>
-                                    It is fascinating being able to coordinate a team during 6 months with the aim to
-                                    organize
-                                    one more edition of an event that counts with more than a decade of existence.
-                                    <br>
-                                    The weight of responsibility is, with no doubt, enormous, but everything compensates
-                                    at the moment which, arrived the day of the event, we see the effort and passion
-                                    that
-                                    the participants adhere and involve themselves at the project.
-                                    <i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    João Valente<br>
-                                    Coordinator of EBEC Challenge Aveiro 2018
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 2 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img alt="testimonial-2" class="img-circle img-testimonial"
-                                     src="assets/img/testimonials/2.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> I already participate in 4 EBECs, in 2 consecutive
-                                    years, and I can't get tired to participate. I believe it is a fantastic experience,
-                                    that force us to think out of the box, solve difficult but interesting challenges,
-                                    in
-                                    a competitive environment but friendly and spectacular between all. It was thanks to
-                                    EBEC that I have made friends in different universities and met fantastic people at
-                                    my own university, created stronger bonds with my team's colleagues and learned a
-                                    lot
-                                    about investigate and try solutions to the given problems. It is worth, with no
-                                    doubt
-                                    <i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Francisco Power<br>
-                                    Winner of EBEC Challenge Aveiro 2018<br>
-                                    Modality: Team Design
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Quote 3 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img alt="testimonial-3" class="img-circle img-testimonial"
-                                     src="assets/img/testimonials/3.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i>Participate in the EBEC was an amazing experience,
-                                    not only for the opportunity to work in interesting challenges, but for the offered
-                                    team building's moments and the excellent connections we could do too. Work with my
-                                    colleagues was incredible! The best part was the way we have grown as a team after
-                                    EBEC,
-                                    and i think that was the most valuable thing that the competition could offer
-                                    <i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Marcelo Manteigas<br>
-                                    Winner of EBEC Challenge Aveiro 2018<br>
-                                    Modality: Case Study
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 4 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img alt="testimonial-5" class="img-circle img-testimonial"
-                                     src="assets/img/testimonials/5.jpg">
+                                     data-bind="attr: {src: foto}" src="">
                             </div>
                             <div class="col-lg-8">
                                 <p class="text-justify text-white">
                                     <i class="fas fa-quote-left"></i>
-                                    My participation as jury of EBEC Aveiro last year has been a privilege, as a
-                                    universitary
-                                    teacher. Besides the always present good disposition, I had such a great pleasure to
-                                    participate in a very organized event! Beyond the rigor and commitment demanded e
-                                    showed
-                                    in the resolution of technical-scientific questions, i felt, essentially, pleased
-                                    with
-                                    the human quality of the participants and the organization.
-                                    <br>
-                                    At the EBEC Aveiro, it has been achieved to foment the leadership's liking, and also
-                                    to the spirit of the team and support. The multidisciplinary challenges are won by
-                                    everybody,
-                                    the participants' competences stand out, allowing to create a increased value in an
-                                    almost natural and relaxed way!
-                                    <br>
-                                    In a time, when the current education methods are really criticized, it is, with no
-                                    doubt
-                                    , a fresh air blow, being able to realize that something is really well done! I
-                                    wish,
-                                    sincerely, all the success to the future editions!<i class="fas fa-quote-right"></i>
-                                </p>
-                                <small class="text-orange">
-                                    Professor Mónica Oliveira<br>
-                                    Mecanic Engineering Department<br>
-                                    University of Aveiro
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quote 5 -->
-                    <div class="item container-fluid">
-                        <div class="row">
-                            <div class="col-lg-offset-1 col-lg-2 text-center">
-                                <img alt="testimonial-4" class="img-circle img-testimonial"
-                                     src="assets/img/testimonials/4.jpg">
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="text-justify text-white">
-                                    <i class="fas fa-quote-left"></i> At the University of Aveiro, BEST Aveiro's
-                                    activities,
-                                    particularly in the context of EBEC, there have been clear examples of success. On
-                                    the
-                                    one hand, they mobilize a considerable number of people, among participants, diverse
-                                    collaborators and assistance. On the other hand, they present themselves as
-                                    excellent
-                                    initiatives in science, technology and engineering. The proposed challenges promote
-                                    a clear growth of the involved students in issues as diverse as the practical
-                                    application
-                                    of scientific knowledge or the imagination and creativity required.
-                                    <br/>
-                                    Participants also benefit from the demands of teamwork with well defined objectives
-                                    and a tight deadline, as well as direct contact with representatives of companies
-                                    and
-                                    relevant institutions.
-                                    <br/>
-                                    This is, moreover, one of the essential markers of merit of this organization,
-                                    always
-                                    supported by several entities that confirm the dynamism and quality of BEST Aveiro
+                                    <span data-bind=" html: corpo"></span>
                                     <i class="fas fa-quote-right"></i>
                                 </p>
-                                <small class="text-orange">
-                                    Professor João Oliveira<br>
-                                    Mechanical Engineering Department<br>
-                                    University of Aveiro
-                                </small>
+                                <small class="text-orange" data-bind="html: final"></small>
                             </div>
                         </div>
                     </div>
+                    <!-- /ko -->
 
                     <a class="left carousel-control" data-slide="prev" href="#quote-carousel">
                         <i class="fa fa-chevron-left"></i>
@@ -685,317 +299,26 @@
     </div>
 </div>
 
-<div class="division-main division-gray container" id="apply">
+<div class="container division-gray division-main" data-bind="with: faqs" id="faqs">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-blue">Subscribing</h2>
-            <h3 class="section-subheading text-blue">
-                To apply you only need to follow this steps:
-            </h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-            <p class="text-black">
-                <span class="big-number text-blue">1.</span>
-                <b>Read the regulament that can be found
-                    <a href="assets/Regulamento.pdf" target="_blank">here</a>.</b>
-            </p>
-            <p class="text-black">
-                <span class="big-number text-blue">2.</span>
-                <b>Sign up on BEST Website. You can do it
-                    <a href="https://www.best.eu.org/account/registration.jsp" target="_blank">here</a>.</b>
-            </p>
-            <p class="text-black">
-                <span class="big-number text-blue">3.</span>
-                <b>Do a pre-registration on EBEC Aveiro 2019. You can do it
-                    <a href="https://www.best.eu.org/event/localDetails.jsp?event=o538j3f" target="_blank">here</a>.</b>
-            </p>
-            <p></p>
-            <p class="text-black">
-                <span class="big-number text-blue">4.</span>
-                <b>Write the name of your team. All the members of the team have to write the same name.</b>
-            </p>
-            <p class="text-black">
-                <span class="big-number text-blue">5.</span>
-                <b>Fill all the fields, with exception of "Motivation Letter", which it's optional. Click on "Apply" to
-                    finish this part.</b>
-            </p>
-            <p class="text-black">
-                <span class="big-number text-blue">6.</span>
-                <b> Already have a team? So you finish your pre-registration to EBEC Aveiro 2018. Soon you will receive
-                    an
-                    email with confirmation of registration and more information about the event.</b>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="container division-gray division-main hidden" id="juri">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-blue">Júri</h2>
-            <h3 class="section-subheading text-blue">Quem irá julgar as provas</h3>
-            <br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 text-center"><h3 class="text-blue" style="font-weight: bold;font-size: 25px;">CASE
-            STUDY</h3></div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-member">
-                <img alt="juri" class="img-responsive img-thumbnail img-jury" src="assets/img/team/empty.png">
-                <h4 class="text-blue">Júri 1</h4>
-                <h5>email</h5>
-                <p>departamento</p>
-                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-member">
-                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
-                <h4 class="text-blue">Júri 2</h4>
-                <h5>email</h5>
-                <p>departamento</p>
-                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 text-center"><h3 class="text-blue" style="font-weight: bold;font-size: 25px;">TEAM
-            DESIGN</h3></div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-member">
-                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
-                <h4 class="text-blue">Júri 3</h4>
-                <h5>email</h5>
-                <p>departamento</p>
-                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-member">
-                <img alt="juri" class="img-responsive img-jury" src="assets/img/team/empty.png">
-                <h4 class="text-blue">Júri 4</h4>
-                <h5>email</h5>
-                <p>departamento</p>
-                <a><i class="fab fa-linkedin fa-3x" style="color:#333839"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container division-blue division-main" id="faqs">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">FAQ</h2>
-            <h3 class="section-subheading text-orange">Frequently Asked Questions</h3>
+            <h2 class="section-heading text-blue">FAQ</h2>
+            <h3 class="section-subheading text-blue">Frequently Asked Questions</h3>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="panel-group  col-lg-12" id="accordion">
+            <div class="panel-group  col-lg-12" data-bind="foreach: vetor " id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse1">
-                                How long does the competition last?
-                            </a>
+                            <a class="accordion-toggle collapsed" data-bind="text: p, attr: {href: '#co' + $index()}"
+                               data-parent="#accordion"
+                               data-toggle="collapse" href="#collapse1"></a>
                         </h4>
                     </div>
-                    <div class="panel-collapse collapse" id="collapse1">
-                        <div class="panel-body">
-                            You have 24 hours to build your prototype or get a solution for your
-                            <i>Case Study</i>. The presentation of your project will be on the next wednesday
-                            (march 20th).
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse2">
-                                How many members are there per team?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse2">
-                        <div class="panel-body">
-                            Each team must <u>always</u> have 4 members.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse3">
-                                When will we know what challenge we will have?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse3">
-                        <div class="panel-body">
-                            The challenge will be presented at the opening session, however,
-                            the script will only be distributed when the competition starts.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse4">
-                                Can we leave the University during the challenge?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse4">
-                        <div class="panel-body">
-                            Only external movements from the test location will be allowed exclusively with the approval
-                            of the event coordinator.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse5">
-                                What penalties exist during the test for participants?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse5">
-                        <div class="panel-body">
-                            In case of infringement of the rules established for the competition, the team may be
-                            penalized
-                            in the score of their challenge or disqualified. The team may also lose their caution.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse6">
-                                Do we have to pay to participate in the competition?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse6">
-                        <div class="panel-body">
-                            No, each team will only have to leave a caution. The value will be returned to you at the
-                            end
-                            of the competition after the closing session. This caution is intended to prevent any damage
-                            caused.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse7">
-                                Are we provide with food during the competition's weekend?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse7">
-                        <div class="panel-body">
-                            Yes, through the weekend you will be provide with all meals while you are taking part in the
-                            competition. You will also have a continuous coffee break available through the weekend.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse8">
-                                Can we rest during the challenge?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse8">
-                        <div class="panel-body">
-                            Yes, there will be a "rest room" for participants to rest and even sleep if they wish. There
-                            will also be a recreation room (room that will count on some leisure activities), to use
-                            during
-                            the intervals of the challenge, so that the participants relax a little.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse9">
-                                Who will evaluate the challenges?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse9">
-                        <div class="panel-body">
-                            The jury consists on teachers, elements of BEST with experience in competitions, depending
-                            on
-                            the content of the challenge. There is also the possibility of joining the jury
-                            representatives
-                            of the partner companies.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse10">
-                                How will the projects be evaluated?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse10">
-                        <div class="panel-body">
-                            The projects will be evaluated according to the script of each challenge, in time provided
-                            to
-                            the participants.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse11">
-                                Whom should I ask questions during the challenge?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse11">
-                        <div class="panel-body">
-                            You can only ask questions with people designated for this purpose: the person responsible
-                            for
-                            the tests and the coordinator of the event.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title text-no-transform text-blue">
-                            <a class="accordion-toggle collapsed" data-parent="#accordion" data-toggle="collapse"
-                               href="#collapse12">
-                                I have an exam on the same day as the challenge. What now?
-                            </a>
-                        </h4>
-                    </div>
-                    <div class="panel-collapse collapse" id="collapse12">
-                        <div class="panel-body">
-                            You should contact the organization to best fit the timing of your challenge on the day of
-                            presentation.
-                        </div>
+                    <div class="panel-collapse collapse" data-bind="attr: {id: 'co' + $index()}" id="collapse1">
+                        <div class="panel-body" data-bind="html: r"></div>
                     </div>
                 </div>
             </div>
@@ -1003,466 +326,233 @@
     </div>
 </div>
 
-
-<div class="container division-gray division-main" id="equipa">
+<div class="container division-blue division-main " data-bind="with: juri" id="juri">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-blue">The Team</h2>
+            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
+            <h3 class="section-subheading text-orange" data-bind="text: sectionSubHeading"></h3>
             <br>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-                <img alt="david" class="img-responsive img-circle img-contact" src="assets/img/team/david.jpg">
-                <h4 class="text-blue">Pedro D. Gomes</h4>
-                <p>Coordinator of EBEC Aveiro 2019</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-                <img alt="ana" class="img-responsive img-circle img-contact" src="assets/img/team/ana-moura.jpg">
-                <h4 class="text-blue">Ana Moura</h4>
-                <p>Topic Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-                <img alt="dalila" class="img-responsive img-circle img-contact" src="assets/img/team/dalila.jpg">
-                <h4 class="text-blue">Dalila Marques</h4>
-                <p>Corporate Relations Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-                <img alt="ana" class="img-responsive img-circle img-contact" src="assets/img/team/ana-rita.jpg">
-                <h4 class="text-blue">Ana Rita Silva</h4>
-                <p>Marketing Responsible</p>
+        <div class="col-xs-12 text-center"><h3 class="text-orange"
+                                               style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">TEAM
+            DESIGN</h3></div>
+        <div data-bind="foreach: juri1">
+            <div class="col-md-4 col-sm-6" data-bind="css: {'col-sm-6': $index() != 2}">
+                <div class="team-member">
+                    <img alt="juri" alt="juri"
+                         class="img-responsive img-circle img-center img-thumbnail img-jury"
+                         data-bind="attr: {src: foto}" src="assets\img\juri\1.jpg">
+                    <h4 class="text-white" data-bind="text: nome"></h4>
+                    <a data-bind="attr: {href: conta}"
+                       href="https://www.linkedin.com/in/vitor-bonif%C3%A1cio-473455127/"
+                       target="_blank">
+                        <i class="fab fa-linkedin fa-3x" style="color:white"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="renan" class="img-responsive img-circle img-contact" src="assets/img/team/renan.jpg">
-                <h4 class="text-blue">Renan Ferreira</h4>
-                <p>Information Tecnology Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="bia" class="img-responsive img-circle img-contact" src="assets/img/team/beatriz.jpg">
-                <h4 class="text-blue">Beatriz Candeias</h4>
-                <p>Logistic Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="aguiar" class="img-responsive img-circle img-contact" src="assets/img/team/marta.jpg">
-                <h4 class="text-blue">Marta Santos</h4>
-                <p>Participants Responsible</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="aguiar" class="img-responsive img-circle img-contact" src="assets/img/team/aguiar.jpg">
-                <h4 class="text-blue">Luis Filipe Aguiar</h4>
-                <p>Public Relations Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="daniela" class="img-responsive img-circle img-contact" src="assets/img/team/daniela.jpg">
-                <h4 class="text-blue">Daniela Batista</h4>
-                <p>Store Responsible</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="team-member">
-                <img alt="jorge" class="img-responsive img-circle img-contact" src="assets/img/team/jorgeM.jpg">
-                <h4 class="text-blue">Jorge Marques</h4>
-                <p>Store Responsible</p>
+        <div class="col-xs-12 text-center"><h3 class="text-orange"
+                                               style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">CASE
+            STUDY</h3></div>
+        <div data-bind="foreach: juri2">
+            <div class="col-sm-6">
+                <div class="team-member">
+                    <img alt="juri" alt="juri" class="img-responsive img-center img-circle img-thumbnail img-jury"
+                         data-bind="attr: {src: foto}">
+                    <h4 class="text-white" data-bind="text: nome"></h4>
+                    <a data-bind="attr: {href: conta}" target="_blank"><i class="fab fa-linkedin fa-3x"
+                                                                          style="color:white"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Partners -->
-<div class="division-gray division-main container hidden" id="partners">
-    <!--Primeira Linha-->
+<div class="division-gray division-main container " data-bind="with: partners" id="partners">
     <div class="row">
         <br>
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Gold</h2>
+            <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
             <br>
         </div>
     </div>
-    <br><br><br>
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <a href="http://voltalia.com/pt" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/gold/voltalia.png" style="max-height:120px">
+        <div class="col-sm-offset-2 col-sm-4" style="height:180px">
+            <a href="https://www.forum.pt/">
+                <img alt="forum" class="img-responsive img-center" src="assets\img\partners\ebec\forum.png"
+                     style="max-height:160px">
             </a>
         </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-lg-12 text-center">
-            <img alt="partner" class="img-responsive img-center" src="assets/img/logos/linha.png">
-        </div>
-    </div>
-    <br><br><br>
-    <!--Segunda Linha-->
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Silver</h2>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row">
-        <div class="col-lg-4">
-            <a href="http://www.btl.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/silver/btl.png" style="max-height:140px">
+        <div class="col-sm-4" style="height:180px">
+            <a href="http://www.ipdj.pt/">
+                <img alt="ipdj" class="img-responsive img-center" src="assets\img\partners\annual\ipdj.png"
+                     style="max-height:160px">
             </a>
         </div>
-        <div class="col-lg-4">
-            <a href="http://www.inova-ria.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/silver/geniuslogo.png" style="max-height:190px">
+        <div class="col-sm-12" style="height:180px">
+            <a href="https://www.ua.pt/">
+                <img alt="ua" class="img-responsive img-center" src="assets\img\partners\annual\ua.png"
+                     style="max-height:140px">
             </a>
         </div>
-        <div class="col-lg-4">
-            <a href="http://www.alticelabs.com/pt/index.html" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/silver/alticelabs.png" style="max-height:190px">
-            </a>
-        </div>
-        <div class="col-lg-6">
-            <a href="http://www.colep.com/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/silver/colep.png" style="max-height:190px">
-            </a>
-        </div>
-        <div class="col-lg-6">
-            <a href="https://blip.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/silver/blip.png" style="max-height:155px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row">
-        <div class="col-lg-12">
-            <img alt="partner" class="img-responsive img-center" src="assets/img/logos/linha.png">
-        </div>
-    </div>
-    <br><br><br>
-    <!--Terceira Linha-->
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Parceiros Promo</h2>
+        <div class="row">
             <br>
+            <div class="col-sm-12 text-center">
+                <h2 class=" text-blue" data-bind="text: sectionSubHeading"></h2>
+            </div>
         </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-lg-3">
-            <img alt="partner" class="img-responsive img-center"
-                 src="assets/img/partners/ebec/promo/bocadolobo.png" style="max-height: 45px">
+        <div class="col-sm-6 col-sm-offset-3">
+            <img alt="sol" class="img-responsive img-center" src="assets\img\partners\ebec\sol.png"
+                 style="max-height:200px">
         </div>
-        <div class="col-lg-3">
-            <a href="https://www.tugabox.pt/?lang=pt-pt" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/tugabox.png" style="max-height:120px">
+        <div class="row">
+            <br>
+            <div class="col-sm-12 text-center">
+                <h2 class=" text-blue" data-bind="text: sectionSubHeading2"></h2>
+            </div>
+        </div>
+        <div class="col-sm-6" style="height:160px">
+            <a href="http://www.royalschool.pt">
+                <img alt="royalSchool" class="img-responsive img-center"
+                     src="assets\img\partners\ebec\Promo\royalschool.png" style="max-height:140px">
             </a>
         </div>
-        <div class="col-lg-3">
-            <a href="http://canyouescape.pt/pt/index.php/pt/homepage/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/CanYouEscape.png" style="max-height:120px">
+        <div class="col-sm-6" style="height:160px">
+            <a href="https://www.uhu.pt/pt">
+                <img alt="UHU" class="img-responsive img-center" src="assets\img\partners\ebec\Promo\UHU.png"
+                     style="max-height:120px">
             </a>
         </div>
-        <div class="col-lg-3">
-            <a href="https://www.facebook.com/Mirtiflor-745004355521875/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/mirtiflor.png" style="max-height:120px">
+        <div class="col-sm-6" style="height:160px">
+            <a href="http://www.aguacastello.com/">
+                <img alt="Castello" class="img-responsive img-center" src="assets\img\partners\ebec\Promo\castello.png"
+                     style="max-height:160px">
             </a>
         </div>
-        <div class="col-lg-3">
-            <a href="https://www.jugais.com/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/quintadejugais.png" style="max-height:130px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://nomini.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/nomini.png" style="max-height:135px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://vidaedu.com/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/vidaedu.png" style="max-height:75px">
-            </a>
-        </div>
-        <div class="col-lg-3">
-            <a href="http://www.royalschool.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/royalschool.png" style="max-height:100px">
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="row vertical-align">
-        <div class="col-md-2">
-            <a href="https://www.nestle-cereals.com/pt/pt/?gclid=CjwKCAjws6jVBRBZEiwAkIfZ2u3zj7FeQqJQHqiBYGFnsF3NI9e9-rXDlSVgVD2Z67gQi-QJAjqxERoCBxgQAvD_BwE"
-               target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/nestle.png" style="max-height:130px">
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="https://www.igus.pt/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/igus.bmp" style="max-height:95px">
-            </a>
-        </div>
-        <div class="col-md-3">
-            <a href="http://www.pastelarialatina.com/" target="_blank">
-                <img alt="partner" class="img-responsive img-center"
-                     src="assets/img/partners/ebec/promo/latina.png" style="max-height:100px">
+        <div class="col-sm-6" style="height:160px">
+            <a>
+                <img alt="bocadolobo" class="img-responsive img-center"
+                     src="assets\img\partners\ebec\Promo\bocadolobo.png" style="max-height:90px">
             </a>
         </div>
     </div>
 </div>
 
-<div class="container division-blue division-main" id="parceria">
+
+<div class="container division-blue division-main" data-bind="with: team" id="equipa">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">Become a partner</h2>
-            <br>
+            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
         </div>
     </div>
-    <div class="row text-white">
-        <div class="col-lg-offset-2 col-lg-8 ">
-            <p class="text-justify">
-                By becoming our partner, your company will be integrated in the organization of EBEC Aveiro 2019, with a
-                dynamic team, that is committed to satisfy the needs of extracurricular activities development of the
-                students,
-                as much as the interests of your company. You will have the opportunity to participate in our Job Fair
-                and
-                in our Cocktail Network.
-            </p>
-            <p class="text-justify">
-                <span class="big-number text-orange">•</span> Mark presence in our company fair and expose your company,
-                products and projects. You will have the opportunity of exchange experiences with students in a more
-                informal
-                environment.
-            </p>
-            <p class="text-justify">
-                <span class="big-number text-orange">•</span> Benefit yourself with the access of available curricula,
-                in
-                optional way, from the competition's participants and students of University of Aveiro present in the
-                closing
-                session.
-            </p>
-            <p class="text-justify">
-                <span class="big-number text-orange">•</span> The right to work in line with the Topic Group, being able
-                to propose subjects, of Case Study as much as Team Design, that will be realized by the participants.
-            </p>
-            <p class="text-justify">
-                As our partner, you will benefit with narrow interactions by students of the University of Aveiro,
-                through
-                our company fair and a cocktail network, managing to collect many perceptions through our intense
-                knowledge
-                sharing.
-            </p>
-            <p class="text-justify">
-                Your company will increase its visibility between the students of the University of Aveiro, known by
-                their
-                dynamism, innovation, and entrepreneurship, through the promotion available by BEST Aveiro.
-            </p>
-            <p class="text-justify">
-                If you are interesting in being our partner, contact us through our team's <a class="text-orange"
-                                                                                              href="#contactos">
-                Contacts</a> or by the <a class="text-orange" href="#info">Information</a> of BEST Aveiro.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-
-    </div>
-</div>
-
-<div class="container division-gray division-main" id="contactos">
-    <div class="row">
-        <div class="col-lg-12 text-center text-black">
-            <h2 class="section-heading text-blue">Contacts</h2>
-            <br>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="row" data-bind="foreach: equipa">
+        <div class="col-lg-3 col-sm-6">
             <div class="team-member">
-                <img alt="david" class="img-responsive img-circle img-contact"
-                     src="assets/img/team/david.jpg">
-                <h4 class="text-blue">Pedro D. Gomes</h4>
-                <p class="text-black">Coordinator of EBEC Aveiro 2019</p>
-                <p>
-                    <i class="fa fa-envelope"></i><a href="mailto:pedrodavid1969@gmail.com">
-                    pedrodavid1969@gmail.com</a><br>
-                    <i class="fa fa-phone"></i> <b>+(351) 938 097 366</b>
-                </p>
+                <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
+                     data-bind="attr: {src: foto}" src="">
+                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <p class="text-white" data-bind="text: role"></p>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="team-member text-center">
-                <img alt="jorge"
-                     class="img-responsive img-circle img-contact" src="assets/img/team/jorge.jpg">
-                <h4 class="text-blue">Jorge Silva</h4>
-                <p class="text-black">President of BEST Aveiro</p>
-                <p>
-                    <i class="fa fa-envelope"></i><a href="mailto:jorge.silva@BEST.eu.org">
-                    jorge.silva@BEST.eu.org</a><br>
-                    <i class="fa fa-phone"></i> <b>+(351) 917 077 293</b>
-                </p>
+    </div>
+    <div class="row" data-bind="foreach: equipa2">
+        <div class="col-lg-3 col-sm-6">
+            <div class="team-member">
+                <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
+                     data-bind="attr: {src: foto}" src="">
+                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <p class="text-white" data-bind="text: role"></p>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="team-member text-center">
-                <img alt="dalila" class="img-responsive img-circle img-contact"
-                     src="assets/img/team/dalila.jpg">
-                <h4 class="text-blue">Dalila Marques</h4>
-                <p class="text-black">Corporate Relations Responsible</p>
-                <p>
-                    <i class="fa fa-envelope"></i><a href="mailto:dalilarakelam@gmail.com">
-                    dalilarakelam@gmail.com</a><br>
-                    <i class="fa fa-phone"></i> <b>+(351) 917 369 988</b>
+    </div>
+</div>
+
+
+<div class="container division-gray division-main" data-bind="with: becomePartner" id="parceria">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
+            <br>
+        </div>
+    </div>
+    <div class="row text-blue" data-bind="foreach: corpo">
+        <div class="col-lg-offset-2 col-lg-8 text-justify">
+            <p data-bind="html: $data" style="font-size: 16px"></p>
+        </div>
+    </div>
+</div>
+
+<div class="container division-blue division-main" data-bind="with: contacts" id="contactos">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
+        </div>
+    </div>
+    <div class="row" data-bind="foreach: people">
+        <div class="col-md-4 col-sm-6" data-bind="css: {'col-sm-6': $index() != 2}">
+            <div class="team-member">
+                <img alt="contact" class="img-responsive img-circle img-thumbnail img-contact"
+                     data-bind="attr: {src: foto}">
+                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light">
+                    <i class="fa fa-envelope"></i><a data-bind="attr: {href: email},text: email2"></a><br>
+                    <i class="fa fa-phone"></i> <b data-bind="text: tel"></b>
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container division-blue division-main" id="best">
+<div class="container division-gray division-main" data-bind="with: bestAveiro" id="best">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange">About the BEST Aveiro</h2>
-            <br>
+            <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-5 col-lg-offset-0 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-            <img alt="logo-BEST" class="img-responsive img-center" src="assets/img/logos/best-aveiro-white.png">
+            <img alt="logo-BEST" class="img-responsive img-center" src="assets/img/logos/best-aveiro-color.png">
         </div>
-        <div class="col-lg-7 col-md-12 col-sm-12 text-white">
-            <p class="text-justify">
-                Founded oficially in 2010, the Local Group Best Aveiro, hosted in University of Aveiro, counts with 45
-                active
-                members from Sciences, Technologies and Engineering fields. By its 8 years of history, distinguished
-                himself
-                by its diversity e the quality of its organized events. These ones cover the students by local, national
-                and european level, focusing even on the development of the members of the Association, so they can be
-                in
-                constant progression and learning.
-            </p>
-            <p class="text-justify">
-                The BEST Aveiro offers the students the opportunity to participate in events that aim the
-                complementarity of
-                his studies, organizing annually, a competition in the scientific-technologic field, Soft or Hard skills
-                formations, a seasonal course and a symposium of technological innovation. With the aim to strengthen
-                the
-                relationship between students and companies, the BEST Aveiro still organizes, integrated in the EBEC
-                Competition,
-                offering students relevant opportunities for their professional future and to the companies bigger
-                facility
-                of communication and recruitment of the academic community.
-            </p>
-
+        <div class="col-lg-7 text-blue text-justify" data-bind="foreach: corpo">
+            <p class="" data-bind="text: $data" style="font-size: 16px"></p>
         </div>
     </div>
 </div>
 
-<div class="division-gray division-main container" id="info">
+<div class="division-blue division-main container" data-bind="with: info" id="info">
     <div class="row">
-        <div class="col-lg-12 text-center text-white">
-            <h2 class="section-heading text-blue">Infor<span class="hidden-lg hidden-md hidden-sm">-<br></span>mations
-            </h2>
-            <br/>
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-orange" data-bind="html: sectionHeading"></h2>
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-offset-1 col-sm-10">
-            <div class="embed-responsive embed-responsive-16by9 division-rounded">
-                <iframe class="embed-responsive-item"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q=BEST Aveiro, Aveiro, PT">
-                </iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" data-bind="attr: {src: mapa}"></iframe>
             </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-            <h4 class="text-blue"><i class="fa fa-home"></i> Address</h4>
-            <p class="text-black text-muted">
-                <b>Incubadora de Empresas da Universidade de Aveiro<br/>
-                    Campus Universitário de Santiago, Edifício 1<br/>
-                    3810-193 Aveiro<br/>
-                    Portugal</b>
-            </p>
-            <h4 class="text-blue"><i class="fa fa-phone"></i> Telephone</h4>
-            <p class="text-black">
-                +351 917 077 329
-            </p>
-            <h4 class="text-blue"><i class="fa fa-envelope"></i> Email</h4>
-            <p class="text-white">
-                <a href="mailto:aveiro@BEST.eu.org">aveiro@BEST.eu.org</a><br/>
-            </p>
-            <br/>
-            <ul class="list-inline">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center text-white">
+            <div data-bind="foreach: infos">
+                <h4 class="text-orange"><i class="fa" data-bind="class: classe"></i> <span
+                        data-bind="text: chave"></span></h4>
+                <p class="text-white text-muted" data-bind="html: valor"></p>
+            </div>
+            <br/><br/>
+            <ul class="list-inline" data-bind="foreach: icones">
                 <li>
-                    <a href="http://bestaveiro.web.ua.pt/" target="_blank">
+                    <a data-bind="attr: {href: ref}" href="" target="_blank">
                         <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x" style="color:#294F66"></i>
-                            <i class="fas fa-globe fa-stack-1x fa-inverse" style="color:rgba(200,200,200,1)"></i>
-                        </span>
-
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/EBEC.aveiro/" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x" style="color:#294F66"></i>
-                            <i class="fab fa-facebook fa-stack-1x fa-inverse" style="color:rgba(200,200,200,1)"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/best.aveiro/" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x" style="color:#294F66"></i>
-                            <i class="fab fa-instagram fa-stack-1x fa-inverse" style="color:rgba(200,200,200,1)"></i>
-                        </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/company/best-aveiro" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x" style="color:#294F66"></i>
-                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color:rgba(200,200,200,1)"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.flickr.com/photos/bestaveiro" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x" style="color:#294F66"></i>
-                            <i class="fab fa-flickr fa-stack-1x fa-inverse" style="color:rgba(200,200,200,1)"></i>
+                            <i class="fa fa-circle fa-stack-2x" style="color:white"></i>
+                            <i class="fa-stack-1x fa-inverse"
+                               data-bind="class: classe, css: {fab: $index() != 0, fas: $index() == 0}"
+                               style="color:#294F66"></i>
                         </span>
                     </a>
                 </li>
@@ -1476,7 +566,7 @@
         <div class="col-lg-offset-4 col-lg-2 col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-4 col-xs-6">
             <a href="https://www.ua.pt/" target="_blank">
                 <img alt="Universidade de Aveiro" class="img-responsive img-grayscale img-footer-2 img-center hidden-xs"
-                     src="assets/img/partners/annual/ua-3.png">
+                     src="assets/img/partners/annual/ua.png">
                 <img alt="Universidade de Aveiro"
                      class="img-responsive img-grayscale img-footer-3 img-center hidden-lg hidden-md hidden-sm"
                      src="assets/img/partners/annual/ua-2.gif">
