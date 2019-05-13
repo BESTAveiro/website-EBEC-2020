@@ -55,12 +55,12 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img alt="roldana-EBEC" class="nav-logo-1" src="assets/img/logos/roldana-branca.png">
+                <img alt="roldana-EBEC" class="nav-logo-1" data-bind="attr: {src: img}">
             </a>
         </div>
         <div class="navbar-right hidden-xs">
             <a target="_blank" href="http://bestaveiro.web.ua.pt/">
-                <img alt="logo-BEST" class="nav-logo-2" src="assets/img/logos/best-aveiro-white.png">
+                <img alt="logo-BEST" class="nav-logo-2" data-bind="attr: {src: img2}">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -301,8 +301,8 @@
 <div class="container division-gray division-main" data-bind="with: faqs" id="faqs">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-blue">FAQ</h2>
-            <h3 class="section-subheading text-blue">Frequently Asked Questions</h3>
+            <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
+            <h3 class="section-subheading text-blue" data-bind="text: sectionSubHeading"></h3>
         </div>
     </div>
     <div class="container-fluid">
@@ -333,15 +333,16 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 text-center"><h3 class="text-orange"
-                                               style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">TEAM
-            DESIGN</h3></div>
+        <div class="col-xs-12 text-center">
+            <h3 class="text-orange" data-bind="text: sectionSubHeading1"
+                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;"></h3>
+        </div>
         <div data-bind="foreach: juri1">
             <div class="col-md-4 col-sm-6" data-bind="css: {'col-sm-6': $index() != 2}">
                 <div class="team-member">
                     <img alt="juri" alt="juri"
                          class="img-responsive img-circle img-center img-thumbnail img-jury"
-                         data-bind="attr: {src: foto}" src="assets\img\juri\1.jpg">
+                         data-bind="attr: {src: foto}">
                     <h4 class="text-white" data-bind="text: nome"></h4>
                     <a data-bind="attr: {href: conta}"
                        href="https://www.linkedin.com/in/vitor-bonif%C3%A1cio-473455127/"
@@ -353,9 +354,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 text-center"><h3 class="text-orange"
-                                               style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">CASE
-            STUDY</h3></div>
+        <div class="col-xs-12 text-center">
+            <h3 class="text-orange" data-bind="text: sectionSubHeading2"
+                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;"></h3>
+        </div>
         <div data-bind="foreach: juri2">
             <div class="col-sm-6">
                 <div class="team-member">
@@ -400,7 +402,7 @@
         <div class="row">
             <br>
             <div class="col-sm-12 text-center">
-                <h2 class=" text-blue" data-bind="text: sectionSubHeading"></h2>
+                <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading"></h2>
             </div>
         </div>
         <div class="col-sm-6 col-sm-offset-3">
@@ -410,7 +412,7 @@
         <div class="row">
             <br>
             <div class="col-sm-12 text-center">
-                <h2 class=" text-blue" data-bind="text: sectionSubHeading2"></h2>
+                <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading2"></h2>
             </div>
         </div>
         <div class="col-sm-6" style="height:160px">
@@ -559,20 +561,20 @@
     </div>
 </div>
 
-<footer class="container-fluid">
+<footer class="container-fluid" data-bind="with: footer">
     <div class="row vertical-align">
         <div class="col-lg-offset-4 col-lg-2 col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-4 col-xs-6">
             <a target="_blank" href="https://www.ua.pt/">
                 <img class="img-responsive img-grayscale img-footer-2 img-center hidden-xs" alt="Universidade de Aveiro"
-                     src="assets/img/partners/annual/ua.png">
+                     data-bind="attr: {src: img3}">
                 <img class="img-responsive img-grayscale img-footer-3 img-center hidden-lg hidden-md hidden-sm"
-                     alt="Universidade de Aveiro" src="assets/img/partners/annual/ua-2.gif">
+                     alt="Universidade de Aveiro" data-bind="attr: {src: img}">
             </a>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <a target="_blank" href="http://www.ipdj.pt/">
-                <img class="img-responsive img-grayscale img-footer img-center" alt="IPDJ"
-                     src="assets/img/partners/annual/ipdj.png">
+                <img alt="IPDJ" class="img-responsive img-grayscale img-footer img-center"
+                     data-bind="attr: {src: img2}">
             </a>
         </div>
     </div>

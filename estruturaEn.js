@@ -2,6 +2,8 @@ $(document).ready(function () {
 
     var portuguese = {
         navbar: {
+            img: "assets/img/logos/roldana-branca.png",
+            img2: "assets/img/logos/best-aveiro-white.png",
             lingua: "PT",
             page: "index.html",
             dropdowns: [
@@ -218,6 +220,10 @@ $(document).ready(function () {
 
         },
         faqs: {
+            sectionHeading: "FAQ",
+            sectionSubHeading: "Frequently Asked Questions",
+            sectionSubHeading1: "TEAM DESIGN",
+            sectionSubHeading2: "CASE STUDY",
             vetor: [
                 {
                     p: "How long does the competition last?",
@@ -284,6 +290,8 @@ $(document).ready(function () {
         juri: {
             sectionHeading: "Jury",
             sectionSubHeading: "Who will evaluate the competition",
+            sectionSubHeading1: "TEAM DESIGN",
+            sectionSubHeading2: "CASE STUDY",
             juri1: [
                 {
                     nome: "Vitor Bonifácio",
@@ -421,6 +429,11 @@ $(document).ready(function () {
                 {ref: "https://www.linkedin.com/company/best-aveiro", classe: "fa-linkedin-in"},
                 {ref: "https://www.flickr.com/photos/bestaveiro", classe: "fa-flickr"}
             ]
+        },
+        footer: {
+            img: "assets/img/partners/annual/ua-2.gif",
+            img2: "assets/img/partners/annual/ipdj.png",
+            img3: "assets/img/partners/annual/ua.png"
         }
 
     };
