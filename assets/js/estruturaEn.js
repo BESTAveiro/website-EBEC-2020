@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var portuguese = {
         navbar: {
-            img: "assets/img/logos/roldana-branca.png",
+            img: "assets/img/logos/roldana-white.png",
             img2: "assets/img/logos/best-aveiro-white.png",
             lingua: "PT",
             page: "index.html",
@@ -10,7 +10,7 @@ $(document).ready(function () {
                 {
                     title: "About EBEC",
                     menu: [
-                        {nome: "EBEC Aveiro", ref: "#ebec"},
+                        {nome: "EBEC Aveiro", ref: "#media"},
                         {nome: "Preview Editions", ref: '#ebecAnt'},
                         {nome: "Program", ref: '#programa'},
                         {nome: "Subscribing", ref: '#apply'},
@@ -20,24 +20,24 @@ $(document).ready(function () {
                 {
                     title: "More About EBEC",
                     menu: [
-                        {nome: "FAQ", ref: "faqs"},
-                        {nome: "Jury", ref: "juri"},
-                        {nome: "Partners", ref: "partners"},
-                        {nome: "The Team", ref: "equipa"},
-                        {nome: "Become Our Partner", ref: "parceria"},
-                        {nome: "Contacts", ref: "contactos"}]
+                        {nome: "FAQ", ref: "#faqs"},
+                        {nome: "Jury", ref: "#juri"},
+                        {nome: "Partners", ref: "#partners"},
+                        {nome: "The Team", ref: "#equipa"},
+                        {nome: "Become Our Partner", ref: "#parceria"},
+                        {nome: "Contacts", ref: "#contactos"}]
                 },
                 {
                     title: "The Organization",
                     menu: [
-                        {nome: "About the BEST Aveiro", ref: "best"},
-                        {nome: "Information", ref: "info"}]
+                        {nome: "About the BEST Aveiro", ref: "#best"},
+                        {nome: "Information", ref: "#info"}]
                 }
             ]
 
         },
         entrada: {
-            logo: "assets/img/logos/ebec-aveiro.png",
+            logo: "assets/img/logos/ebec-aveiro-color.png",
             title: "March<br> 14th, 15th, 16th, 17th and 20th"
         },
         ebecAveiro: {
@@ -160,7 +160,7 @@ $(document).ready(function () {
             sectionHeading: "Subscribing",
             sectionSubheading: "To apply you only need to follow this steps:",
             corpo: [
-                " Read the regulament that can be found <a href=\"assets/Regulamento.pdf\" target=\"_blank\">here</a>.",
+                " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.",
                 " Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
                 " Do a pre-registration on EBEC Aveiro 2019. You can do it " +
@@ -177,7 +177,7 @@ $(document).ready(function () {
             sectionSubheading: "Professors and Participants",
             testemunhos: [
                 {
-                    foto: "assets/img/team/valente.jpg",
+                    foto: "assets/img/testimonials/1.jpg",
                     corpo: "'Being EBEC's coordinator, is not having a normal day!', that is already a maximum to everyone " +
                         "of all the coordinators of this event and I couldn't agree more with that." +
                         "<br>It is fascinating being able to coordinate a team during 6 months with the aim to organize " +
@@ -334,7 +334,7 @@ $(document).ready(function () {
         partners: {
             sectionHeading: "Partners",
             sectionSubHeading: "Media Partners",
-            sectionSubHeading2: "Promo Partners"
+            sectionSubHeading2: "promo Partners"
         },
         team: {
             sectionHeading: "The Team",
