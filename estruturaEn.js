@@ -9,13 +9,30 @@ $(document).ready(function () {
             dropdowns: [
                 {
                     title: "About EBEC",
-                    menu: ["EBEC Aveiro", "Preview Editions", "Program", "Subscribing", "Testemunhos"]
+                    menu: [
+                        {nome: "EBEC Aveiro", ref: "#ebec"},
+                        {nome: "Preview Editions", ref: '#ebecAnt'},
+                        {nome: "Program", ref: '#programa'},
+                        {nome: "Subscribing", ref: '#apply'},
+                        {nome: "Testimonials", ref: '#testemunhos'}
+                    ]
                 },
                 {
-                    title: "More About the EBEC",
-                    menu: ["FAQ", "Jury", "Partners", "The Team", "Become our partner", "Contacts"]
+                    title: "More About EBEC",
+                    menu: [
+                        {nome: "FAQ", ref: "faqs"},
+                        {nome: "Jury", ref: "juri"},
+                        {nome: "Partners", ref: "partners"},
+                        {nome: "The Team", ref: "equipa"},
+                        {nome: "Become Our Partner", ref: "parceria"},
+                        {nome: "Contacts", ref: "contactos"}]
                 },
-                {title: "The Organization", menu: ["About the BEST Aveiro", "Informations"]}
+                {
+                    title: "The Organization",
+                    menu: [
+                        {nome: "About the BEST Aveiro", ref: "best"},
+                        {nome: "Information", ref: "info"}]
+                }
             ]
 
         },

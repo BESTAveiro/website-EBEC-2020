@@ -3,8 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="69361acb-f31d-4578-ba4d-4cc2c15650b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/sol.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/ebec/sol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/logos/linha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/annual/ordem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/CanYouEscape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/UHU.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/Promo/UHU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/bocadolobo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/Promo/bocadolobo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/castello.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/Promo/castello.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/igus.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/latina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/mirtiflor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/nestle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/nomini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/quintadejugais.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/royalschool.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/Promo/royalschool.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/tugabox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/vidaedu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/Promo/®–QUINTADEJUGAIS-Logotipo-2014 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/forum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/ebec/forum.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/partners/annual/forum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/partners/forum.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/estrutura.js" beforeDir="false" afterPath="$PROJECT_DIR$/estrutura.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estruturaEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/estruturaEn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-en.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-en.html" afterDir="false" />
@@ -33,29 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="420" column="14" lean-forward="true" selection-end-line="581" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="621" lean-forward="true" selection-start-line="621" selection-end-line="621" />
+            <state relative-caret-position="141">
+              <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -63,15 +65,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="-1700">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#8;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="405" column="92" selection-start-line="405" selection-start-column="92" selection-end-line="405" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#8;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -82,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/estrutura.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="298" column="12" lean-forward="true" selection-start-line="298" selection-start-column="12" selection-end-line="299" selection-end-column="45" />
+            <state relative-caret-position="416">
+              <caret line="340" column="41" selection-start-line="340" selection-start-column="41" selection-end-line="340" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
                 <element signature="e#48#68#0" expanded="true" />
@@ -95,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/estruturaEn.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="293" column="45" selection-start-line="293" selection-start-column="45" selection-end-line="293" selection-end-column="45" />
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
                 <element signature="e#38#60#0" expanded="true" />
@@ -125,6 +152,7 @@
       <find>img-circle</find>
       <find>img-thumbnail</find>
       <find>img-co</find>
+      <find>nav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,11 +178,11 @@
         <option value="$PROJECT_DIR$/assets/knockout.js" />
         <option value="$PROJECT_DIR$/assets/knockout-3.5.0.js" />
         <option value="$PROJECT_DIR$/index2.html" />
-        <option value="$PROJECT_DIR$/estrutura.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/index-en.html" />
         <option value="$PROJECT_DIR$/estruturaEn.js" />
+        <option value="$PROJECT_DIR$/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/estrutura.js" />
+        <option value="$PROJECT_DIR$/index-en.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -169,49 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="partners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="partners" type="462c0819:PsiDirectoryNode" />
-              <item name="ebec" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -241,12 +226,48 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="partners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-EBEC-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-EBEC-2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="testimonials" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ebec-challenge-2018-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\node_modules\eslint" />
@@ -257,19 +278,19 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/BESTAveiro/ebec-challenge-2018.git" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners\ebec" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners\annual" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets" />
+      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners\ebec" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\team" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\regulation" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\partners" />
       <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\assets\img\testimonials" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\views" />
-      <recent name="C:\Users\Renan Ferreira\PhpstormProjects\website-EBEC-2019\application\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -313,7 +334,9 @@
       <workItem from="1550435259970" duration="3014000" />
       <workItem from="1550601494602" duration="577000" />
       <workItem from="1550824097834" duration="5804000" />
-      <workItem from="1557737932236" duration="890000" />
+      <workItem from="1557737932236" duration="1417000" />
+      <workItem from="1557860884926" duration="2407000" />
+      <workItem from="1558173593454" duration="6283000" />
     </task>
     <task id="LOCAL-00001" summary="Maybe Final">
       <created>1545264257202</created>
@@ -483,21 +506,28 @@
       <option name="project" value="LOCAL" />
       <updated>1557500182918</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="maio 2019 - 4">
+      <created>1557738992317</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557738992318</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323984000" />
+    <option name="totallyTimeSpent" value="333201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2526475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -514,7 +544,7 @@
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -526,7 +556,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32242227" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32242227" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -600,13 +630,13 @@
     <MESSAGE value="maio 2019" />
     <MESSAGE value="maio 2019 - 2" />
     <MESSAGE value="maio 2019 - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="maio 2019 - 3" />
+    <MESSAGE value="maio 2019 - 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="maio 2019 - 4" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/file_existence.js" />
     <entry file="file://$PROJECT_DIR$/assets/_DS_Store" />
     <entry file="file://$PROJECT_DIR$/src/humans.txt" />
     <entry file="file://$PROJECT_DIR$/dist/css/main.css" />
@@ -641,9 +671,6 @@
     <entry file="file://$PROJECT_DIR$/assets/img/logos/roldana-branca.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/logos/linha.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/logos/ebec_aveiro_logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -655,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index2.html" />
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19261">
-          <caret line="1133" column="15" selection-start-line="1133" selection-start-column="15" selection-end-line="1133" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/team/jorgeM .jpg" />
     <entry file="file://$PROJECT_DIR$/assets/img/team/jorgeM.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -716,34 +736,41 @@
     <entry file="file://$PROJECT_DIR$/assets/img/testimonials/5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="621" lean-forward="true" selection-start-line="621" selection-end-line="621" />
+        <state relative-caret-position="500">
+          <caret line="4619" column="1" selection-start-line="4598" selection-end-line="4619" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/estruturaEn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="420" column="14" lean-forward="true" selection-end-line="581" />
+        <state relative-caret-position="136">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
+            <element signature="e#38#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/logos/linha.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/estrutura.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="298" column="12" lean-forward="true" selection-start-line="298" selection-start-column="12" selection-end-line="299" selection-end-column="45" />
+        <state relative-caret-position="416">
+          <caret line="340" column="41" selection-start-line="340" selection-start-column="41" selection-end-line="340" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
             <element signature="e#48#68#0" expanded="true" />
@@ -756,28 +783,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index-en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="-1700">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#8;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/estruturaEn.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="293" column="45" selection-start-line="293" selection-start-column="45" selection-end-line="293" selection-end-column="45" />
+        <state relative-caret-position="213">
+          <caret line="405" column="92" selection-start-line="405" selection-start-column="92" selection-end-line="405" selection-end-column="92" />
           <folding>
-            <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
-            <element signature="e#38#60#0" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#2;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ol#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#8;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -14,9 +14,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
           type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
 
 
     <!--Links jquery-->
@@ -68,15 +69,18 @@
                 <!--ko foreach: dropdowns-->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <span data-bind="text: title"></span>
+                        <span class="navLetter" data-bind="text: title"></span>
                         <span class='caret'></span>
                     </a>
                     <ul class="dropdown-menu division-blue" data-bind="foreach: menu">
-                        <li><a data-bind="text: $data" href="#ebec"></a></li>
+                        <li><a class="navLetter" data-bind="attr: {href: ref}"><span class="navLetter"
+                                                                                     data-bind="text: nome"></span></a>
+                        </li>
                     </ul>
                 </li>
                 <!--/ko-->
-                <li><a data-bind="text: lingua, attr: {href: page}"></a></li>
+                <li><a data-bind="text: lingua, attr: {href: page}"
+                       style="font-family: 'Ubuntu', sans-serif;font-size: medium;"></a></li>
             </ul>
         </div>
     </div>
@@ -100,7 +104,7 @@
 </div>
 
 
-<div class="tabs division-blue division-main container" data-bind="with: ebecAveiro" id="ebec">
+<div class="tabs division-blue division-main container " data-bind="with: ebecAveiro" id="ebec">
 
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -188,7 +192,7 @@
     </section>
 </div>
 
-<section class="division-main division-gray container" data-bind="with: edicoesAnteriores" id="ebecAnt">
+<section class="division-main division-gray container " data-bind="with: edicoesAnteriores" id="ebecAnt">
     <div class="row">
         <div class="col-lg-12">
             <h2 class="text-center section-heading text-blue" data-bind="html: sectionHeading"></h2>
@@ -207,7 +211,7 @@
 </section>
 
 
-<section class="container division-blue division-main" data-bind="with: programa" id="programa">
+<section class="container division-blue division-main " data-bind="with: programa" id="programa">
     <div class="row">
         <div class="col-lg-12">
             <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
@@ -231,7 +235,7 @@
     </div>
 </section>
 
-<div class="division-main division-gray container" data-bind="with: apply" id="apply">
+<div class="division-main division-gray container " data-bind="with: apply" id="apply">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
@@ -249,7 +253,7 @@
 </div>
 
 
-<div class="container division-blue division-main" data-bind="with: testimonials" id="testemunhos">
+<div class="container division-blue division-main " data-bind="with: testimonials" id="testemunhos">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange" data-bind="html: sectionHeading"></h2>
@@ -298,7 +302,7 @@
     </div>
 </div>
 
-<div class="container division-gray division-main" data-bind="with: faqs" id="faqs">
+<div class="container division-gray division-main " data-bind="with: faqs" id="faqs">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
@@ -372,7 +376,7 @@
     </div>
 </div>
 
-<div class="division-gray division-main container " data-bind="with: partners" id="partners">
+<div class="division-gray division-main container" data-bind="with: partners" id="partners">
     <div class="row">
         <br>
         <div class="col-lg-12 text-center">
@@ -381,69 +385,61 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-offset-2 col-sm-4" style="height:180px">
+        <div class="col-sm-offset-2 col-sm-4 parceiroImg">
             <a href="https://www.forum.pt/">
-                <img alt="forum" class="img-responsive img-center" src="assets\img\partners\ebec\forum.png"
-                     style="max-height:160px">
+                <img alt="forum" class="img-responsive img-center" src="assets\img\partners\annual\forum.png">
             </a>
         </div>
-        <div class="col-sm-4" style="height:180px">
+        <div class="col-sm-4 parceiroImg">
             <a href="http://www.ipdj.pt/">
-                <img alt="ipdj" class="img-responsive img-center" src="assets\img\partners\annual\ipdj.png"
-                     style="max-height:160px">
+                <img alt="ipdj" class="img-responsive img-center" src="assets\img\partners\annual\ipdj.png">
             </a>
         </div>
-        <div class="col-sm-12" style="height:180px">
+        <div class="col-sm-12 parceiroImg">
             <a href="https://www.ua.pt/">
                 <img alt="ua" class="img-responsive img-center" src="assets\img\partners\annual\ua.png"
-                     style="max-height:140px">
+                     style="max-width: 320px">
             </a>
         </div>
-        <div class="row">
-            <br>
-            <div class="col-sm-12 text-center">
-                <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading"></h2>
-            </div>
+        <br>
+        <div class="col-sm-12 text-center">
+            <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading"></h2>
         </div>
-        <div class="col-sm-6 col-sm-offset-3">
-            <img alt="sol" class="img-responsive img-center" src="assets\img\partners\ebec\sol.png"
-                 style="max-height:200px">
+        <div class="col-sm-6 col-sm-offset-3 parceiroImg">
+            <img alt="sol" class="img-responsive img-center" src="assets\img\partners\media\sol.png">
         </div>
-        <div class="row">
-            <br>
-            <div class="col-sm-12 text-center">
-                <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading2"></h2>
-            </div>
+        <br>
+        <div class="col-sm-12 text-center">
+            <h2 class=" text-blue sectionSubHeading" data-bind="text: sectionSubHeading2"></h2>
         </div>
-        <div class="col-sm-6" style="height:160px">
+        <div class="col-sm-6 parceiroImg">
             <a href="http://www.royalschool.pt">
                 <img alt="royalSchool" class="img-responsive img-center"
-                     src="assets\img\partners\ebec\Promo\royalschool.png" style="max-height:140px">
+                     src="assets\img\partners\Promo\royalschool.png">
             </a>
         </div>
-        <div class="col-sm-6" style="height:160px">
+        <div class="col-sm-6 parceiroImg">
             <a href="https://www.uhu.pt/pt">
-                <img alt="UHU" class="img-responsive img-center" src="assets\img\partners\ebec\Promo\UHU.png"
-                     style="max-height:120px">
+                <img alt="UHU" class="img-responsive img-center" id="uhu" src="assets\img\partners\Promo\UHU.png">
             </a>
         </div>
-        <div class="col-sm-6" style="height:160px">
+        <div class="col-sm-6 parceiroImg">
             <a href="http://www.aguacastello.com/">
-                <img alt="Castello" class="img-responsive img-center" src="assets\img\partners\ebec\Promo\castello.png"
-                     style="max-height:160px">
+                <img alt="Castello" class="img-responsive img-center" src="assets\img\partners\Promo\castello.png"
+                     style="max-width: 320px">
             </a>
         </div>
-        <div class="col-sm-6" style="height:160px">
+        <div class="col-sm-6 parceiroImg ">
             <a>
-                <img alt="bocadolobo" class="img-responsive img-center"
-                     src="assets\img\partners\ebec\Promo\bocadolobo.png" style="max-height:90px">
+                <img alt="bocadolobo" class="img-responsive img-center" id="bdl"
+                     src="assets\img\partners\Promo\bocadolobo.png" style="">
             </a>
         </div>
     </div>
 </div>
 
 
-<div class="container division-blue division-main" data-bind="with: team" id="equipa">
+<div class="container division-blue division-main " data-bind="with: team" id="equipa">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
@@ -472,7 +468,7 @@
 </div>
 
 
-<div class="container division-gray division-main" data-bind="with: becomePartner" id="parceria">
+<div class="container division-gray division-main " data-bind="with: becomePartner" id="parceria">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
@@ -486,7 +482,7 @@
     </div>
 </div>
 
-<div class="container division-blue division-main" data-bind="with: contacts" id="contactos">
+<div class="container division-blue division-main " data-bind="with: contacts" id="contactos">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
@@ -508,7 +504,7 @@
     </div>
 </div>
 
-<div class="container division-gray division-main" data-bind="with: bestAveiro" id="best">
+<div class="container division-gray division-main " data-bind="with: bestAveiro" id="best">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-blue" data-bind="text: sectionHeading"></h2>
@@ -524,7 +520,7 @@
     </div>
 </div>
 
-<div class="division-blue division-main container" data-bind="with: info" id="info">
+<div class="division-blue division-main container " data-bind="with: info" id="info">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange" data-bind="html: sectionHeading"></h2>

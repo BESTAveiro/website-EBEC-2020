@@ -277,6 +277,32 @@
   background-color: transparent;
 }
 
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #91C044;
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #91C044;
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #91C044;
+    background-color: transparent;
+  }
+}
+
 
 /*carousel*/
 #quote-carousel .carousel-control {
@@ -631,6 +657,37 @@ footer{
 #partners .sectionSubHeading {
   margin-bottom: 15px;
 }
+
+.navLetter {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: medium;
+}
+
+.parceiroImg {
+  margin-bottom: 30px;
+}
+
+#uhu {
+  max-width: 400px;
+}
+
+#bdl {
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  #uhu {
+    max-width: 320px;
+  }
+
+  #bdl {
+    max-width: 320px;
+  }
+
+}
+
+
+
 
 
 

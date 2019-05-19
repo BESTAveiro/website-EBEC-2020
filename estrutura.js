@@ -9,13 +9,30 @@ $(document).ready(function () {
             dropdowns: [
                 {
                     title: "Sobre a EBEC",
-                    menu: ["EBEC Aveiro", "Edições Anteriores", "Programa", "Inscrição", "Testemunhos"]
+                    menu: [
+                        {nome: "EBEC Aveiro", ref: "#ebec"},
+                        {nome: "Edições Anteriores", ref: '#ebecAnt'},
+                        {nome: "Programa", ref: '#programa'},
+                        {nome: "Inscrição", ref: '#apply'},
+                        {nome: "Testemunhos", ref: '#testemunhos'}
+                    ]
                 },
                 {
                     title: "Mais sobre a EBEC",
-                    menu: ["FAQ", "Júri", "Parceiros", "Equipa", "Torne-se nosso Parceiro", "Contactos"]
+                    menu: [
+                        {nome: "FAQ", ref: "faqs"},
+                        {nome: "Júri", ref: "juri"},
+                        {nome: "Parceiros", ref: "partners"},
+                        {nome: "Equipa", ref: "equipa"},
+                        {nome: "Torne-se nosso Parceiro", ref: "parceria"},
+                        {nome: "Contactos", ref: "contactos"}]
                 },
-                {title: "A Organização", menu: ["Sobre o BEST Aveiro", "Informações"]}
+                {
+                    title: "A Organização",
+                    menu: [
+                        {nome: "Sobre o BEST Aveiro", ref: "best"},
+                        {nome: "Informações", ref: "info"}]
+                }
             ]
 
         },
