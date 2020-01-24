@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var portuguese = {
         navbar: {
-            img: "assets/img/logos/roldana-branca.png",
+            img: "assets/img/logos/roldana-white.png",
             img2: "assets/img/logos/best-aveiro-white.png",
             lingua: "EN",
             page: "index-en.html",
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         },
         entrada: {
-            logo: "assets/img/logos/ebec-aveiro.png",
+            logo: "assets/img/logos/ebec-aveiro-color.png",
             title: "14, 15, 16, 17 e 20 de março<br class='hidden-xs'> de 2019"
         },
         ebecAveiro: {
@@ -166,7 +166,7 @@ $(document).ready(function () {
             sectionSubheading: "Professores e Participantes",
             testemunhos: [
                 {
-                    foto: "assets/img/team/valente.jpg",
+                    foto: "assets/img/testimonials/1.jpg",
                     corpo: " “Ser-se Coordenador da EBEC, é não ter um dia normal!”, isto já é uma máxima de todos os coordenadores " +
                         "deste evento e eu não poderia concordar mais com ela. É fascinante poder coordenar uma equipa durante " +
                         "6 meses com o intuito de organizar mais uma edição de um evento que já conta com uma década de " +
@@ -418,7 +418,7 @@ $(document).ready(function () {
             ]
         },
         info: {
-            mapa: "https://www.google.com/maps/embed/v1/place?key=AIzaSyDM0ZNlzZS6wulKFOv1s6PARvuXmGI-paM&q=BEST Aveiro, Aveiro, PT",
+            mapa: "https://www.google.com/maps/embed/v1/place?key=AIzaSyCMIUqakqzpEZx05JpVA7GaNhcpkfwyAyg&q=BEST Aveiro, Aveiro, PT",
             infos: [
                 {
                     chave: "Morada",
